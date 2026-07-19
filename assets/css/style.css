@@ -2074,10 +2074,10 @@ margin-top: 12px;
 }
 .info-content .name{
 
-    font-size:32px !important;
+    font: size 28px;px !important;
     font-weight:700;
     color:#ffffff;
-    letter-spacing:1px;
+    letter: spacing 0.5em;px;
     line-height:1.2;
 
     opacity:0;
