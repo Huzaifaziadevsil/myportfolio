@@ -3,112 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Sohail Ahmed</title>
-  <meta name="description" content="Portfolio of Sohail Ahmed, a Full Stack AI Engineer.">
-  
+  <title>Sohail Ahmed | AI Engineer & Data Scientist</title>
+  <meta name="description" content="Portfolio of Sohail Ahmed — AI Engineer, Data Scientist & Full Stack AI Developer from Mansehra, Pakistan.">
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="./assets/css/style.css">
-  
-  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="container">
       <a href="index.html" class="logo">
-        <span class="logo-dot"></span>
-        Sohail.dev
+        <span class="logo-dot"></span>Sohail Ahmed
       </a>
       <ul class="nav-links">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="resume.html" class="nav-link">Resume</a></li>
+        <li><a href="index.html"          class="nav-link">Home</a></li>
+        <li><a href="about.html"          class="nav-link">About</a></li>
+        <li><a href="resume.html"         class="nav-link">Resume</a></li>
         <li><a href="certifications.html" class="nav-link">Certifications</a></li>
-        <li><a href="skills.html" class="nav-link">Skills</a></li>
-        <li><a href="experience.html" class="nav-link">Experience</a></li>
-        <li><a href="projects.html" class="nav-link">Projects</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="skills.html"         class="nav-link">Skills</a></li>
+        <li><a href="experience.html"     class="nav-link">Experience</a></li>
+        <li><a href="projects.html"       class="nav-link">Projects</a></li>
+        <li><a href="contact.html"        class="nav-link">Contact</a></li>
       </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="index.html"          class="nav-link">Home</a>
+    <a href="about.html"          class="nav-link">About</a>
+    <a href="resume.html"         class="nav-link">Resume</a>
+    <a href="certifications.html" class="nav-link">Certifications</a>
+    <a href="skills.html"         class="nav-link">Skills</a>
+    <a href="experience.html"     class="nav-link">Experience</a>
+    <a href="projects.html"       class="nav-link">Projects</a>
+    <a href="contact.html"        class="nav-link">Contact</a>
+  </div>
+
+  <!-- HERO -->
   <main>
-    <section class="hero" id="home">
-      <div class="hero-glow"></div>
-      <div class="container hero-content">
-        <div class="hero-text-content">
-          <p class="hero-greeting gsap-hero mono text-gradient">Hi, my name is</p>
-          <h1 class="gsap-hero">Sohail Ahmed.</h1>
-          <h2 class="gsap-hero hero-subtitle">I build <span class="text-gradient">Production-Grade</span> AI Systems.</h2>
-          <p class="hero-description gsap-hero">
-            I'm a Data Scientist and Full Stack AI Engineer specializing in Machine Learning, Generative AI, and Intelligent Automation. I bridge the gap between raw data and real-world business impact.
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <!-- Text -->
+        <div class="hero-text">
+          <p class="hero-label mono">AI Engineer & Data Scientist</p>
+          <h1>Sohail<br><span class="text-grad">Ahmed.</span></h1>
+          <p class="hero-role">Building <span class="text-grad">Production-Grade</span> AI Systems</p>
+          <p class="hero-desc">
+            I work at the intersection of Machine Learning, Generative AI, and intelligent automation — turning raw data into real-world business impact.
           </p>
-          <div class="hero-actions gsap-hero">
-            <a href="resume.pdf" target="_blank" class="btn btn-primary">
-              <i data-lucide="download" width="18" height="18"></i> Download Resume
+          <div class="hero-actions">
+            <a href="Sohail_Ahmed_CV.pdf" target="_blank" class="btn btn-primary">
+              <i data-lucide="download"></i> Download CV
             </a>
-            <a href="https://github.com/sohail-ahmed-26" target="_blank" class="btn btn-secondary">
-              <i data-lucide="github" width="18" height="18"></i> GitHub
+            <a href="https://github.com/sohail-ahmed-26" target="_blank" class="btn btn-outline">
+              <i data-lucide="github"></i> GitHub
             </a>
-            <a href="https://www.linkedin.com/in/sohail-ahmed-devsil" target="_blank" class="btn btn-secondary">
-              <i data-lucide="linkedin" width="18" height="18"></i> LinkedIn
+            <a href="https://www.linkedin.com/in/sohail-ahmed-devsil" target="_blank" class="btn btn-outline">
+              <i data-lucide="linkedin"></i> LinkedIn
             </a>
-            <a href="https://www.kaggle.com/sohail2411126" target="_blank" class="btn btn-secondary">
-              <strong>K</strong> Kaggle
+            <a href="https://www.kaggle.com/sohail2411126" target="_blank" class="btn btn-outline">
+              <span class="kaggle-k">K</span> Kaggle
             </a>
-            <a href="contact.html" class="btn btn-secondary">
-              <i data-lucide="mail" width="18" height="18"></i> Contact Me
+            <a href="contact.html" class="btn btn-cyan">
+              <i data-lucide="mail"></i> Contact
             </a>
           </div>
         </div>
-        <div class="hero-visual gsap-hero-img">
-          <div class="profile-frame">
-            <div class="profile-img-container">
-              <img src="assets/images/sohailahmed26.png.jpeg" alt="Sohail Ahmed - AI Engineer">
+
+        <!-- Visual -->
+        <div class="hero-visual">
+          <div class="profile-ring">
+            <div class="profile-inner">
+              <img src="assets/images/sohailahmed26.png.jpeg" alt="Sohail Ahmed – AI Engineer">
             </div>
           </div>
-          <div class="tech-badge badge-1">Machine Learning</div>
-          <div class="tech-badge badge-2">Generative AI</div>
-          <div class="tech-badge badge-3">Data Science</div>
+          <div class="float-badge badge-tl">🤖 Generative AI</div>
+          <div class="float-badge badge-br">🧠 Machine Learning</div>
+          <div class="float-badge badge-bl">📊 Data Science</div>
         </div>
+
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer>
     <div class="container">
-      <div class="footer-content">
+      <div class="footer-inner">
         <div class="footer-logo">
-          <span class="logo-dot"></span> Sohail.dev
+          <span class="logo-dot"></span>Sohail Ahmed
         </div>
-        
-        <div class="social-links">
-          <a href="https://github.com/sohail-ahmed-26" target="_blank" class="social-link" aria-label="GitHub"><i data-lucide="github"></i></a>
-          <a href="https://www.linkedin.com/in/sohail-ahmed-devsil" target="_blank" class="social-link" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
-          <a href="https://www.kaggle.com/sohail2411126" target="_blank" class="social-link kaggle-icon" aria-label="Kaggle">
-            <strong>K</strong>
-          </a>
-          <a href="https://x.com/ahmed241126" target="_blank" class="social-link" aria-label="Twitter"><i data-lucide="twitter"></i></a>
-          <a href="https://www.instagram.com/sohailahmed5990" target="_blank" class="social-link" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+        <div class="footer-socials">
+          <a href="https://github.com/sohail-ahmed-26" target="_blank" class="soc-btn" aria-label="GitHub"><i data-lucide="github"></i></a>
+          <a href="https://www.linkedin.com/in/sohail-ahmed-devsil" target="_blank" class="soc-btn" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+          <a href="https://www.kaggle.com/sohail2411126" target="_blank" class="soc-btn" aria-label="Kaggle"><span class="kaggle-k">K</span></a>
+          <a href="https://www.instagram.com/sohailahmed5990" target="_blank" class="soc-btn" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="https://x.com/ahmed241126" target="_blank" class="soc-btn" aria-label="Twitter"><i data-lucide="twitter"></i></a>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p class="footer-text">&copy; 2026 Sohail Ahmed. Building the future of AI. All rights reserved.</p>
-      </div>
+      <p class="footer-copy">&copy; 2026 Sohail Ahmed · Mansehra, KPK, Pakistan · All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="./assets/js/main.js"></script>
-  
-  <script>
-    lucide.createIcons();
-  </script>
+  <script>lucide.createIcons();</script>
 </body>
 </html>

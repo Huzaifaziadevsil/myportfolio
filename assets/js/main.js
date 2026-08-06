@@ -1,103 +1,96 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Register GSAP plugins
+  // ── GSAP setup ───────────────────────────────────────────
   gsap.registerPlugin(ScrollTrigger);
 
-  // 1. Page Transition (Fade in on load)
-  gsap.from('body', {
-    opacity: 0,
-    duration: 0.8,
-    ease: 'power2.inOut'
-  });
+  // ── Page fade-in ─────────────────────────────────────────
+  gsap.fromTo('body', { opacity: 0 }, { opacity: 1, duration: 0.6, ease: 'power2.out' });
 
-  // 2. Hero Section Animations (Only runs on Home)
-  if (document.querySelector('.hero')) {
-    const heroTimeline = gsap.timeline();
-    heroTimeline
-      .from('.gsap-hero', {
-        y: 30,
-        opacity: 0,
-        duration: 1,
-        stagger: 0.2,
-        ease: 'power3.out',
-        delay: 0.2
-      })
-      .from('.gsap-hero-img', {
-        scale: 0.8,
-        opacity: 0,
-        duration: 1.2,
-        ease: 'back.out(1.7)'
-      }, '-=0.8');
-  }
-
-  // 3. Scroll Reveal Animations
-  const fadeElements = document.querySelectorAll('.gsap-fade');
-  if (fadeElements.length > 0) {
-    fadeElements.forEach((el) => {
-      gsap.fromTo(el, 
-        { y: 40, opacity: 0 },
-        {
-          scrollTrigger: {
-            trigger: el,
-            start: 'top 85%',
-            toggleActions: 'play none none none'
-          },
-          y: 0,
-          opacity: 1,
-          duration: 0.8,
-          ease: 'power2.out'
-        }
-      );
-    });
-  }
-
-  // 4. Navbar scroll effect (Glassmorphism transition)
+  // ── Navbar scroll class ───────────────────────────────────
   const navbar = document.getElementById('navbar');
   if (navbar) {
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(8, 8, 11, 0.9)';
-        navbar.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.5)';
-        navbar.style.padding = '0';
-      } else {
-        navbar.style.background = 'rgba(8, 8, 11, 0.6)';
-        navbar.style.boxShadow = 'none';
-      }
-    });
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
   }
 
-  // 5. Active Navigation Indicator
-  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-  const navLinks = document.querySelectorAll('.nav-link');
-  
-  navLinks.forEach(link => {
-    const linkPath = link.getAttribute('href');
-    if (linkPath === currentPath) {
+  // ── Active nav link (matches current page filename) ───────
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-link').forEach(link => {
+    const href = link.getAttribute('href') || '';
+    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
       link.classList.add('active');
     }
   });
 
-  // 6. Smooth Page Transition on Link Click
-  document.querySelectorAll('a').forEach(anchor => {
-    // Only apply to internal html links, ignore external or empty hashes
-    if (anchor.hostname === window.location.hostname && 
-        anchor.getAttribute('href') && 
-        !anchor.getAttribute('href').startsWith('#') &&
-        !anchor.getAttribute('target')) {
-      
-      anchor.addEventListener('click', function(e) {
+  // ── Smooth page transitions on internal links ─────────────
+  document.querySelectorAll('a[href]').forEach(a => {
+    const href = a.getAttribute('href');
+    if (!href) return;
+    const isInternal = !href.startsWith('http') && !href.startsWith('#')
+      && !href.startsWith('mailto') && !href.startsWith('tel')
+      && !href.startsWith('wa.') && !href.endsWith('.pdf')
+      && !a.hasAttribute('target');
+    if (isInternal) {
+      a.addEventListener('click', e => {
         e.preventDefault();
-        const targetUrl = this.getAttribute('href');
-        
-        // Fade out body before navigating
+        const dest = href;
         gsap.to('body', {
-          opacity: 0,
-          duration: 0.4,
-          ease: 'power2.inOut',
-          onComplete: () => {
-            window.location.href = targetUrl;
-          }
+          opacity: 0, duration: 0.35, ease: 'power2.inOut',
+          onComplete: () => { window.location.href = dest; }
         });
       });
     }
+  });
+
+  // ── Mobile hamburger toggle ───────────────────────────────
+  const toggle = document.getElementById('nav-toggle');
+  const mobileNav = document.getElementById('mobile-nav');
+  if (toggle && mobileNav) {
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+    // Close on link click
+    mobileNav.querySelectorAll('.nav-link').forEach(l => {
+      l.addEventListener('click', () => {
+        toggle.classList.remove('open');
+        mobileNav.classList.remove('open');
+      });
+    });
+  }
+
+  // ── Hero animations (only on home) ───────────────────────
+  if (document.querySelector('.hero')) {
+    const tl = gsap.timeline({ delay: 0.2 });
+    tl.from('.hero-label', { y: 20, opacity: 0, duration: 0.7, ease: 'power3.out' })
+      .from('.hero h1', { y: 30, opacity: 0, duration: 0.8, ease: 'power3.out' }, '-=0.4')
+      .from('.hero-role', { y: 25, opacity: 0, duration: 0.7, ease: 'power3.out' }, '-=0.5')
+      .from('.hero-desc', { y: 20, opacity: 0, duration: 0.6, ease: 'power3.out' }, '-=0.4')
+      .from('.hero-actions', { y: 20, opacity: 0, duration: 0.6, ease: 'power3.out' }, '-=0.4')
+      .from('.profile-ring', { scale: 0.85, opacity: 0, duration: 1, ease: 'back.out(1.4)' }, '-=0.6')
+      .from('.float-badge', { opacity: 0, y: 20, stagger: 0.15, duration: 0.6, ease: 'power2.out' }, '-=0.5');
+  }
+
+  // ── Scroll reveal for .gsap-reveal elements ──────────────
+  document.querySelectorAll('.gsap-reveal').forEach(el => {
+    gsap.fromTo(el,
+      { y: 40, opacity: 0 },
+      {
+        scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none none' },
+        y: 0, opacity: 1, duration: 0.75, ease: 'power2.out'
+      }
+    );
+  });
+
+  // ── Stagger for .gsap-stagger children ───────────────────
+  document.querySelectorAll('.gsap-stagger').forEach(container => {
+    const children = container.children;
+    gsap.fromTo(children,
+      { y: 35, opacity: 0 },
+      {
+        scrollTrigger: { trigger: container, start: 'top 85%', toggleActions: 'play none none none' },
+        y: 0, opacity: 1, duration: 0.7, ease: 'power2.out', stagger: 0.1
+      }
+    );
   });
 });

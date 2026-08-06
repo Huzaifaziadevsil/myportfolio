@@ -4,133 +4,131 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Certifications | Sohail Ahmed</title>
-  <meta name="description" content="Professional certifications of Sohail Ahmed.">
-  
+  <meta name="description" content="Professional certifications earned by Sohail Ahmed.">
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="./assets/css/style.css">
-  
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="container">
-      <a href="index.html" class="logo">
-        <span class="logo-dot"></span>
-        Sohail.dev
-      </a>
+      <a href="index.html" class="logo"><span class="logo-dot"></span>Sohail Ahmed</a>
       <ul class="nav-links">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="resume.html" class="nav-link">Resume</a></li>
+        <li><a href="index.html"          class="nav-link">Home</a></li>
+        <li><a href="about.html"          class="nav-link">About</a></li>
+        <li><a href="resume.html"         class="nav-link">Resume</a></li>
         <li><a href="certifications.html" class="nav-link">Certifications</a></li>
-        <li><a href="skills.html" class="nav-link">Skills</a></li>
-        <li><a href="experience.html" class="nav-link">Experience</a></li>
-        <li><a href="projects.html" class="nav-link">Projects</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="skills.html"         class="nav-link">Skills</a></li>
+        <li><a href="experience.html"     class="nav-link">Experience</a></li>
+        <li><a href="projects.html"       class="nav-link">Projects</a></li>
+        <li><a href="contact.html"        class="nav-link">Contact</a></li>
       </ul>
+      <button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button>
     </div>
   </nav>
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a>
+    <a href="resume.html" class="nav-link">Resume</a><a href="certifications.html" class="nav-link">Certifications</a>
+    <a href="skills.html" class="nav-link">Skills</a><a href="experience.html" class="nav-link">Experience</a>
+    <a href="projects.html" class="nav-link">Projects</a><a href="contact.html" class="nav-link">Contact</a>
+  </div>
 
-  <!-- Page Header -->
+  <!-- PAGE HEADER -->
   <header class="page-header">
-    <div class="page-header-glow"></div>
     <div class="container">
-      <h1 class="page-title gsap-fade">Certifications</h1>
-      <p class="page-subtitle gsap-fade">Recognized achievements and continuous learning in Artificial Intelligence.</p>
+      <p class="page-label gsap-reveal">Verified Credentials</p>
+      <h1 class="gsap-reveal">Certifications</h1>
+      <p class="gsap-reveal">Professional certifications validating my expertise in AI and Data Science.</p>
     </div>
   </header>
 
-  <!-- Certifications Content -->
-  <main class="page-content">
-    <div class="container">
-      <div class="cert-grid">
-        
-        <!-- Certificate 1 -->
-        <div class="cert-card gsap-fade">
-          <div class="cert-img-container">
-            <img src="assets/images/certificates/WhatsApp%20Image%202026-08-06%20at%2011.06.04%20AM.jpeg" alt="AI Certification">
-          </div>
-          <div class="cert-content">
-            <h3 class="cert-title">Artificial Intelligence Specialization</h3>
-            <div class="cert-issuer">Professional Certification Board</div>
-            <div class="cert-actions">
-              <a href="assets/images/certificates/WhatsApp%20Image%202026-08-06%20at%2011.06.04%20AM.jpeg" target="_blank" class="cert-btn">
-                <i data-lucide="eye" width="16" height="16" style="display:inline; vertical-align:text-bottom;"></i> View
-              </a>
-              <a href="assets/images/certificates/WhatsApp%20Image%202026-08-06%20at%2011.06.04%20AM.jpeg" download class="cert-btn">
-                <i data-lucide="download" width="16" height="16" style="display:inline; vertical-align:text-bottom;"></i> Download
-              </a>
+  <!-- CERTIFICATIONS -->
+  <main>
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="cert-grid gsap-stagger">
+
+          <!-- Certificate 1: micro1 AI Interview -->
+          <div class="cert-card card">
+            <div class="cert-thumb">
+              <img src="assets/images/certificates/WhatsApp Image 2026-08-06 at 11.06.04 AM.jpeg"
+                   alt="micro1 AI Interview Outstanding Performance Certificate">
+              <div class="cert-overlay">
+                <a href="assets/images/certificates/WhatsApp Image 2026-08-06 at 11.06.04 AM.jpeg"
+                   target="_blank" title="View Certificate"><i data-lucide="eye"></i></a>
+                <a href="assets/images/certificates/WhatsApp Image 2026-08-06 at 11.06.04 AM.jpeg"
+                   download="Sohail_Ahmed_micro1_AI_Certificate.jpeg" title="Download Certificate"><i data-lucide="download"></i></a>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-org">micro1</div>
+              <div class="cert-title">Outstanding AI Interview Performance</div>
+              <div class="cert-date">Issued: June 27, 2026</div>
             </div>
           </div>
-        </div>
 
-        <!-- Certificate 2 -->
-        <div class="cert-card gsap-fade">
-          <div class="cert-img-container">
-            <img src="assets/images/certificates/WhatsApp%20Image%202026-08-06%20at%2011.11.24%20AM.jpeg" alt="Machine Learning Certification">
-          </div>
-          <div class="cert-content">
-            <h3 class="cert-title">Machine Learning Engineering</h3>
-            <div class="cert-issuer">Professional Certification Board</div>
-            <div class="cert-actions">
-              <a href="assets/images/certificates/WhatsApp%20Image%202026-08-06%20at%2011.11.24%20AM.jpeg" target="_blank" class="cert-btn">
-                <i data-lucide="eye" width="16" height="16" style="display:inline; vertical-align:text-bottom;"></i> View
-              </a>
-              <a href="assets/images/certificates/WhatsApp%20Image%202026-08-06%20at%2011.11.24%20AM.jpeg" download class="cert-btn">
-                <i data-lucide="download" width="16" height="16" style="display:inline; vertical-align:text-bottom;"></i> Download
-              </a>
+          <!-- Certificate 2: Kaggle Community Member -->
+          <div class="cert-card card">
+            <div class="cert-thumb">
+              <img src="assets/images/certificates/WhatsApp Image 2026-08-06 at 11.11.24 AM.jpeg"
+                   alt="Kaggle Community Member Certificate">
+              <div class="cert-overlay">
+                <a href="assets/images/certificates/WhatsApp Image 2026-08-06 at 11.11.24 AM.jpeg"
+                   target="_blank" title="View Certificate"><i data-lucide="eye"></i></a>
+                <a href="assets/images/certificates/WhatsApp Image 2026-08-06 at 11.11.24 AM.jpeg"
+                   download="Sohail_Ahmed_Kaggle_Community_Member.jpeg" title="Download Certificate"><i data-lucide="download"></i></a>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-org">Kaggle</div>
+              <div class="cert-title">Kaggle Community Member</div>
+              <div class="cert-date">Issued: February 8, 2026</div>
             </div>
           </div>
-        </div>
 
-        <!-- Certificate 3 -->
-        <div class="cert-card gsap-fade">
-          <div class="cert-img-container">
-            <img src="assets/images/certificates/WhatsApp%20Image%202026-08-06%20at%2011.11.24%20AM%20(1).jpeg" alt="Data Science Certification">
-          </div>
-          <div class="cert-content">
-            <h3 class="cert-title">Applied Data Science</h3>
-            <div class="cert-issuer">Professional Certification Board</div>
-            <div class="cert-actions">
-              <a href="assets/images/certificates/WhatsApp%20Image%202026-08-06%20at%2011.11.24%20AM%20(1).jpeg" target="_blank" class="cert-btn">
-                <i data-lucide="eye" width="16" height="16" style="display:inline; vertical-align:text-bottom;"></i> View
-              </a>
-              <a href="assets/images/certificates/WhatsApp%20Image%202026-08-06%20at%2011.11.24%20AM%20(1).jpeg" download class="cert-btn">
-                <i data-lucide="download" width="16" height="16" style="display:inline; vertical-align:text-bottom;"></i> Download
-              </a>
+          <!-- Certificate 3: Kaggle Learner -->
+          <div class="cert-card card">
+            <div class="cert-thumb">
+              <img src="assets/images/certificates/WhatsApp Image 2026-08-06 at 11.11.24 AM (1).jpeg"
+                   alt="Kaggle Learner Badge Certificate">
+              <div class="cert-overlay">
+                <a href="assets/images/certificates/WhatsApp Image 2026-08-06 at 11.11.24 AM (1).jpeg"
+                   target="_blank" title="View Certificate"><i data-lucide="eye"></i></a>
+                <a href="assets/images/certificates/WhatsApp Image 2026-08-06 at 11.11.24 AM (1).jpeg"
+                   download="Sohail_Ahmed_Kaggle_Learner.jpeg" title="Download Certificate"><i data-lucide="download"></i></a>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-org">Kaggle</div>
+              <div class="cert-title">Kaggle Learner Badge</div>
+              <div class="cert-date">Issued: March 2, 2026</div>
             </div>
           </div>
-        </div>
 
+        </div>
       </div>
-    </div>
+    </section>
   </main>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer>
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <span class="logo-dot"></span> Sohail.dev
-        </div>
-        
-        <div class="social-links">
-          <a href="https://github.com/sohail-ahmed-26" target="_blank" class="social-link" aria-label="GitHub"><i data-lucide="github"></i></a>
-          <a href="https://www.linkedin.com/in/sohail-ahmed-devsil" target="_blank" class="social-link" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
-          <a href="https://www.kaggle.com/sohail2411126" target="_blank" class="social-link kaggle-icon" aria-label="Kaggle"><strong>K</strong></a>
-          <a href="https://x.com/ahmed241126" target="_blank" class="social-link" aria-label="Twitter"><i data-lucide="twitter"></i></a>
-          <a href="https://www.instagram.com/sohailahmed5990" target="_blank" class="social-link" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+      <div class="footer-inner">
+        <div class="footer-logo"><span class="logo-dot"></span>Sohail Ahmed</div>
+        <div class="footer-socials">
+          <a href="https://github.com/sohail-ahmed-26" target="_blank" class="soc-btn"><i data-lucide="github"></i></a>
+          <a href="https://www.linkedin.com/in/sohail-ahmed-devsil" target="_blank" class="soc-btn"><i data-lucide="linkedin"></i></a>
+          <a href="https://www.kaggle.com/sohail2411126" target="_blank" class="soc-btn"><span class="kaggle-k">K</span></a>
+          <a href="https://www.instagram.com/sohailahmed5990" target="_blank" class="soc-btn"><i data-lucide="instagram"></i></a>
+          <a href="https://x.com/ahmed241126" target="_blank" class="soc-btn"><i data-lucide="twitter"></i></a>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p class="footer-text">&copy; 2026 Sohail Ahmed. All rights reserved.</p>
-      </div>
+      <p class="footer-copy">&copy; 2026 Sohail Ahmed · Mansehra, KPK, Pakistan · All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="./assets/js/main.js"></script>

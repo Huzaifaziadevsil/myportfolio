@@ -4,87 +4,124 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Experience | Sohail Ahmed</title>
-  <meta name="description" content="Professional experience of Sohail Ahmed.">
-  
+  <meta name="description" content="Professional experience of Sohail Ahmed as an AI Engineer Intern.">
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="./assets/css/style.css">
-  
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="container">
-      <a href="index.html" class="logo">
-        <span class="logo-dot"></span>
-        Sohail.dev
-      </a>
+      <a href="index.html" class="logo"><span class="logo-dot"></span>Sohail Ahmed</a>
       <ul class="nav-links">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="resume.html" class="nav-link">Resume</a></li>
+        <li><a href="index.html"          class="nav-link">Home</a></li>
+        <li><a href="about.html"          class="nav-link">About</a></li>
+        <li><a href="resume.html"         class="nav-link">Resume</a></li>
         <li><a href="certifications.html" class="nav-link">Certifications</a></li>
-        <li><a href="skills.html" class="nav-link">Skills</a></li>
-        <li><a href="experience.html" class="nav-link">Experience</a></li>
-        <li><a href="projects.html" class="nav-link">Projects</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="skills.html"         class="nav-link">Skills</a></li>
+        <li><a href="experience.html"     class="nav-link">Experience</a></li>
+        <li><a href="projects.html"       class="nav-link">Projects</a></li>
+        <li><a href="contact.html"        class="nav-link">Contact</a></li>
       </ul>
+      <button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button>
     </div>
   </nav>
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a>
+    <a href="resume.html" class="nav-link">Resume</a><a href="certifications.html" class="nav-link">Certifications</a>
+    <a href="skills.html" class="nav-link">Skills</a><a href="experience.html" class="nav-link">Experience</a>
+    <a href="projects.html" class="nav-link">Projects</a><a href="contact.html" class="nav-link">Contact</a>
+  </div>
 
-  <!-- Page Header -->
+  <!-- PAGE HEADER -->
   <header class="page-header">
-    <div class="page-header-glow"></div>
     <div class="container">
-      <h1 class="page-title gsap-fade">Professional Experience</h1>
-      <p class="page-subtitle gsap-fade">My career progression and contributions to the AI engineering field.</p>
+      <p class="page-label gsap-reveal">Professional Journey</p>
+      <h1 class="gsap-reveal">Experience</h1>
+      <p class="gsap-reveal">My hands-on experience building AI systems in a professional environment.</p>
     </div>
   </header>
 
-  <!-- Experience Content -->
-  <main class="page-content">
-    <div class="container">
-      
-      <div class="timeline">
-        <!-- Item 1 -->
-        <div class="timeline-item gsap-fade">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">7 Months Internship</div>
-          <h3 class="timeline-title">AI Engineer Intern (Full Stack AI)</h3>
-          <div class="timeline-company">Devsinc / IMTA</div>
-          <p class="timeline-desc">
-            Contributed to the end-to-end development of AI-driven solutions. Assisted in fine-tuning machine learning models, deploying robust backend architectures using Python and FastAPI, and integrating Large Language Models into practical automation workflows. Collaborated with cross-functional teams to design scalable data pipelines and deploy computer vision systems.
-          </p>
+  <!-- EXPERIENCE -->
+  <main>
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="exp-wrapper gsap-reveal">
+          <div class="exp-card">
+            <div class="exp-badge">
+              <span class="dot"></span> Currently Active · 7 Months
+            </div>
+            <div class="exp-role">AI Engineer Intern (Full Stack AI)</div>
+            <div class="exp-company">Devsil · Mansehra, KPK, Pakistan</div>
+            <p class="exp-desc">
+              Working as a Full Stack AI Engineer Intern at Devsil (Devsinc), contributing to the design, development, and deployment of production-grade AI systems. My work spans the complete AI pipeline — from data ingestion and preprocessing through model training to API deployment and integration into real-world applications.
+            </p>
+            <p class="exp-desc">
+              Key responsibilities include: building and fine-tuning machine learning models, implementing Retrieval-Augmented Generation (RAG) pipelines using LangChain and vector databases, developing RESTful APIs with FastAPI, and collaborating with cross-functional teams to deliver business-ready AI solutions.
+            </p>
+            <div class="exp-skills">
+              <span class="exp-skill">Python</span>
+              <span class="exp-skill">Machine Learning</span>
+              <span class="exp-skill">LangChain</span>
+              <span class="exp-skill">RAG</span>
+              <span class="exp-skill">FastAPI</span>
+              <span class="exp-skill">Computer Vision</span>
+              <span class="exp-skill">LLMs</span>
+              <span class="exp-skill">Docker</span>
+              <span class="exp-skill">Data Analysis</span>
+            </div>
+          </div>
         </div>
+
+        <!-- Prior Activities (not employment) -->
+        <div style="margin-top: 3rem;" class="gsap-reveal">
+          <p class="section-label">Before Devsil</p>
+          <h2 class="section-title" style="font-size: 1.75rem;">Earlier Activities</h2>
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.25rem; margin-top: 1.5rem;">
+            <div class="skill-group">
+              <div class="skill-group-header">
+                <i data-lucide="graduation-cap"></i>
+                <h3>Online Learning</h3>
+              </div>
+              <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                Completed multiple online courses in Machine Learning, Data Science, and Deep Learning before joining Devsil — building a strong foundation in AI fundamentals.
+              </p>
+            </div>
+            <div class="skill-group">
+              <div class="skill-group-header">
+                <i data-lucide="globe"></i>
+                <h3>Freelancing (Upwork)</h3>
+              </div>
+              <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                Worked as a freelance AI/ML developer on Upwork, delivering custom machine learning models and data pipelines for international clients — sharpening both technical and communication skills.
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
-      
-    </div>
+    </section>
   </main>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer>
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <span class="logo-dot"></span> Sohail.dev
-        </div>
-        
-        <div class="social-links">
-          <a href="https://github.com/sohail-ahmed-26" target="_blank" class="social-link" aria-label="GitHub"><i data-lucide="github"></i></a>
-          <a href="https://www.linkedin.com/in/sohail-ahmed-devsil" target="_blank" class="social-link" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
-          <a href="https://www.kaggle.com/sohail2411126" target="_blank" class="social-link kaggle-icon" aria-label="Kaggle"><strong>K</strong></a>
-          <a href="https://x.com/ahmed241126" target="_blank" class="social-link" aria-label="Twitter"><i data-lucide="twitter"></i></a>
-          <a href="https://www.instagram.com/sohailahmed5990" target="_blank" class="social-link" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+      <div class="footer-inner">
+        <div class="footer-logo"><span class="logo-dot"></span>Sohail Ahmed</div>
+        <div class="footer-socials">
+          <a href="https://github.com/sohail-ahmed-26" target="_blank" class="soc-btn"><i data-lucide="github"></i></a>
+          <a href="https://www.linkedin.com/in/sohail-ahmed-devsil" target="_blank" class="soc-btn"><i data-lucide="linkedin"></i></a>
+          <a href="https://www.kaggle.com/sohail2411126" target="_blank" class="soc-btn"><span class="kaggle-k">K</span></a>
+          <a href="https://www.instagram.com/sohailahmed5990" target="_blank" class="soc-btn"><i data-lucide="instagram"></i></a>
+          <a href="https://x.com/ahmed241126" target="_blank" class="soc-btn"><i data-lucide="twitter"></i></a>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p class="footer-text">&copy; 2026 Sohail Ahmed. All rights reserved.</p>
-      </div>
+      <p class="footer-copy">&copy; 2026 Sohail Ahmed · Mansehra, KPK, Pakistan · All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="./assets/js/main.js"></script>
