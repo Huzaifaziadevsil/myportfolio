@@ -94,3 +94,46 @@ document.addEventListener('DOMContentLoaded', () => {
     );
   });
 });
+
+// ── Interactive Demo Modal ──────────────────────────────────────
+window.openDemo = function(type, url, title, fallbackUrl) {
+  const overlay = document.createElement('div');
+  overlay.className = 'demo-modal-overlay';
+  
+  const modal = document.createElement('div');
+  modal.className = 'demo-modal';
+  
+  const header = document.createElement('div');
+  header.className = 'demo-modal-header';
+  header.innerHTML = `<h3>${title}</h3><button class="demo-close" onclick="this.closest('.demo-modal-overlay').remove()"><i data-lucide="x"></i></button>`;
+  
+  const body = document.createElement('div');
+  body.className = 'demo-modal-body';
+  
+  if (url) {
+    const iframe = document.createElement('iframe');
+    iframe.src = url;
+    iframe.className = 'demo-iframe';
+    body.appendChild(iframe);
+  } else {
+    const placeholder = document.createElement('div');
+    placeholder.className = 'demo-placeholder';
+    placeholder.innerHTML = `
+      <div class="demo-icon"><i data-lucide="monitor-play" style="width:48px;height:48px;"></i></div>
+      <h4 style="font-size:1.5rem;margin-bottom:1rem;color:#fff;">Interactive Demo Not Available</h4>
+      <p style="margin-bottom:2rem;max-width:400px;margin-left:auto;margin-right:auto;">This project requires a backend environment or local execution and cannot be embedded directly in the browser.</p>
+      <a href="${fallbackUrl}" target="_blank" class="btn btn-primary"><i data-lucide="github"></i> View Source Code</a>
+    `;
+    body.appendChild(placeholder);
+  }
+  
+  modal.appendChild(header);
+  modal.appendChild(body);
+  overlay.appendChild(modal);
+  document.body.appendChild(overlay);
+  
+  lucide.createIcons();
+  
+  gsap.fromTo(overlay, {opacity: 0}, {opacity: 1, duration: 0.3});
+  gsap.fromTo(modal, {scale: 0.8, y: 20}, {scale: 1, y: 0, duration: 0.4, ease: 'back.out(1.5)'});
+};
