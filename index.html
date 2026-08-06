@@ -17,7 +17,7 @@
   <!-- Navbar -->
   <nav class="navbar" id="navbar">
     <div class="container">
-      <a href="#" class="logo">
+      <a href="#home" class="logo">
         <span class="logo-dot"></span>
         Sohail.dev
       </a>
@@ -28,6 +28,7 @@
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
+      <!-- Mobile menu button can be added here if needed, but styling handles standard responsive -->
     </div>
   </nav>
 
@@ -36,24 +37,30 @@
     <div class="hero-glow"></div>
     <div class="container hero-content">
       <div class="hero-text-content">
-        <h1 class="gsap-hero">Building <br><span class="text-gradient">Production-Grade</span><br> AI Systems.</h1>
+        <p class="hero-greeting gsap-hero mono text-gradient">Hi, my name is</p>
+        <h1 class="gsap-hero">Sohail Ahmed.</h1>
+        <h2 class="gsap-hero hero-subtitle">I build <span class="text-gradient">Production-Grade</span> AI Systems.</h2>
         <p class="hero-description gsap-hero">
-          I'm Sohail Ahmed, a Data Scientist and Full Stack AI Engineer specializing in Machine Learning, Generative AI, and AI Automation.
+          I'm a Data Scientist and Full Stack AI Engineer specializing in Machine Learning, Generative AI, and Intelligent Automation. I bridge the gap between raw data and real-world business impact.
         </p>
         <div class="hero-actions gsap-hero">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          <a href="#projects" class="btn btn-primary">
+            <i data-lucide="folder-code" width="18" height="18"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i data-lucide="mail" width="18" height="18"></i> Contact Me
+          </a>
         </div>
       </div>
       <div class="hero-visual gsap-hero-img">
         <div class="profile-frame">
           <div class="profile-img-container">
-            <img src="assets/images/sohailahmed26.png.jpeg" alt="Sohail Ahmed">
+            <img src="assets/images/sohailahmed26.png.jpeg" alt="Sohail Ahmed - AI Engineer">
           </div>
         </div>
-        <div class="tech-badge badge-1">Python</div>
-        <div class="tech-badge badge-2">Machine Learning</div>
-        <div class="tech-badge badge-3">LLMs</div>
+        <div class="tech-badge badge-1">Machine Learning</div>
+        <div class="tech-badge badge-2">Generative AI</div>
+        <div class="tech-badge badge-3">Data Science</div>
       </div>
     </div>
   </section>
@@ -63,18 +70,18 @@
     <div class="container">
       <div class="section-header gsap-fade">
         <h2 class="section-title">About Me</h2>
-        <p class="section-subtitle">Bridging the gap between data and real-world impact.</p>
+        <div class="section-line"></div>
       </div>
       <div class="about-grid">
         <div class="about-text gsap-fade">
           <p>
-            In the current AI era, I found my passion in solving complex business problems through data. Starting with foundational online courses, I quickly transitioned to real-world impact as an intern at <strong>Devsinc</strong> and a freelancer on <strong>Upwork</strong>.
+            In the fast-evolving era of Artificial Intelligence, I found my passion in solving complex business challenges through data-driven engineering. My journey began with rigorous self-study and online coursework, rapidly accelerating into real-world impact during my time as an intern at <strong>Devsinc</strong> and as a specialized freelancer on <strong>Upwork</strong>.
           </p>
           <p>
-            Today, as a <strong>Full Stack AI Engineer</strong> at IMTA, I focus on developing end-to-end AI solutions. I don't just build models; I build functional AI applications, fine-tune LLMs, and automate repetitive workflows to save human time and drive business value.
+            Today, as a <strong>Full Stack AI Engineer at IMTA</strong>, I don't just train models in isolation. I design and deploy end-to-end AI architectures. From fine-tuning Large Language Models (LLMs) and building complex Retrieval-Augmented Generation (RAG) pipelines, to deploying scalable Computer Vision systems and automating critical workflows with AI Agents.
           </p>
           <p>
-            Whether it's data analytics, computer vision, or deploying scalable MLOps pipelines on AWS, my goal is always to deliver robust, overfitting-free solutions that seamlessly integrate into production environments.
+            I am driven by a singular goal: creating robust, overfitting-free, production-ready AI solutions that drastically reduce manual effort and generate measurable business value.
           </p>
         </div>
         <div class="about-stats gsap-fade">
@@ -101,92 +108,113 @@
     </div>
   </section>
 
-  <!-- Skills Section -->
+  <!-- Skills Section (Comprehensive AI Matrix) -->
   <section class="section" id="skills">
     <div class="container">
       <div class="section-header gsap-fade">
-        <h2 class="section-title">Technical Expertise</h2>
-        <p class="section-subtitle">The tools and technologies I use to build intelligent systems.</p>
+        <h2 class="section-title">Technical Skills Matrix</h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">A comprehensive overview of my expertise across the AI and software engineering stack.</p>
       </div>
       
-      <div class="skills-grid">
-        <!-- AI / ML Core -->
-        <div class="skill-category gsap-fade">
-          <div class="category-header">
-            <div class="category-icon"><i data-lucide="brain-circuit"></i></div>
-            <h3 class="category-title">AI & Data Science</h3>
+      <div class="skills-matrix">
+        
+        <!-- Category 1: AI Engineering -->
+        <div class="skill-group gsap-fade">
+          <div class="skill-group-header">
+            <i data-lucide="bot"></i>
+            <h3>AI Engineering</h3>
           </div>
-          <div class="skill-list">
-            <div class="skill-item-row">
-              <span class="skill-name">Machine Learning</span>
-              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 83%"></div></div>
-            </div>
-            <div class="skill-item-row">
-              <span class="skill-name">Data Analytics</span>
-              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 80%"></div></div>
-            </div>
-            <div class="skill-item-row">
-              <span class="skill-name">Generative AI</span>
-              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 60%"></div></div>
-            </div>
-            <div class="skill-item-row">
-              <span class="skill-name">Computer Vision</span>
-              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 55%"></div></div>
-            </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Agentic AI</span>
+            <span class="skill-tag">Multi-Agent Systems</span>
+            <span class="skill-tag">Generative AI</span>
+            <span class="skill-tag">Large Language Models (LLMs)</span>
+            <span class="skill-tag">RAG</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">AI Automation</span>
+            <span class="skill-tag">Model Context Protocol (MCP)</span>
           </div>
         </div>
 
-        <!-- Engineering / Automation -->
-        <div class="skill-category gsap-fade">
-          <div class="category-header">
-            <div class="category-icon"><i data-lucide="bot"></i></div>
-            <h3 class="category-title">Engineering</h3>
+        <!-- Category 2: Machine Learning -->
+        <div class="skill-group gsap-fade">
+          <div class="skill-group-header">
+            <i data-lucide="brain-circuit"></i>
+            <h3>Machine Learning</h3>
           </div>
-          <div class="skill-list">
-            <div class="skill-item-row">
-              <span class="skill-name">AI Automation</span>
-              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 60%"></div></div>
-            </div>
-            <div class="skill-item-row">
-              <span class="skill-name">AI Agents</span>
-              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 70%"></div></div>
-            </div>
-            <div class="skill-item-row">
-              <span class="skill-name">MLOps</span>
-              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 50%"></div></div>
-            </div>
-            <div class="skill-item-row">
-              <span class="skill-name">Consultancy</span>
-              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%"></div></div>
-            </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Deep Learning</span>
+            <span class="skill-tag">Computer Vision</span>
+            <span class="skill-tag">NLP</span>
+            <span class="skill-tag">Time Series</span>
+            <span class="skill-tag">Feature Engineering</span>
+            <span class="skill-tag">Data Analytics</span>
           </div>
         </div>
 
-        <!-- Tools & Cloud -->
-        <div class="skill-category gsap-fade">
-          <div class="category-header">
-            <div class="category-icon"><i data-lucide="cloud"></i></div>
-            <h3 class="category-title">Tools & Cloud</h3>
+        <!-- Category 3: Programming -->
+        <div class="skill-group gsap-fade">
+          <div class="skill-group-header">
+            <i data-lucide="code-2"></i>
+            <h3>Programming</h3>
           </div>
-          <div class="skill-list">
-            <div class="skill-item-row">
-              <span class="skill-name">GitHub / Git</span>
-              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 75%"></div></div>
-            </div>
-            <div class="skill-item-row">
-              <span class="skill-name">AWS</span>
-              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 40%"></div></div>
-            </div>
-            <div class="skill-item-row">
-              <span class="skill-name">SQL / DBs</span>
-              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 65%"></div></div>
-            </div>
-            <div class="skill-item-row">
-              <span class="skill-name">Docker</span>
-              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 30%"></div></div>
-            </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
           </div>
         </div>
+
+        <!-- Category 4: Frameworks -->
+        <div class="skill-group gsap-fade">
+          <div class="skill-group-header">
+            <i data-lucide="blocks"></i>
+            <h3>AI Frameworks & APIs</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">LangChain</span>
+            <span class="skill-tag">LangGraph</span>
+            <span class="skill-tag">LlamaIndex</span>
+            <span class="skill-tag">CrewAI</span>
+            <span class="skill-tag">OpenAI API</span>
+            <span class="skill-tag">Gemini API</span>
+            <span class="skill-tag">Hugging Face</span>
+          </div>
+        </div>
+
+        <!-- Category 5: Backend -->
+        <div class="skill-group gsap-fade">
+          <div class="skill-group-header">
+            <i data-lucide="server"></i>
+            <h3>Backend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Node.js</span>
+          </div>
+        </div>
+
+        <!-- Category 6: Cloud & DevOps -->
+        <div class="skill-group gsap-fade">
+          <div class="skill-group-header">
+            <i data-lucide="cloud"></i>
+            <h3>Cloud & DevOps</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">Vercel</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -196,52 +224,53 @@
     <div class="container">
       <div class="section-header gsap-fade">
         <h2 class="section-title">Experience</h2>
-        <p class="section-subtitle">My professional journey in the tech industry.</p>
+        <div class="section-line"></div>
       </div>
       
       <div class="timeline">
         <!-- Item 1 -->
         <div class="timeline-item gsap-fade">
           <div class="timeline-dot"></div>
-          <div class="timeline-date">Aug 2025 — Present</div>
+          <div class="timeline-date">August 2025 — Present</div>
           <h3 class="timeline-title">Full Stack AI Engineer</h3>
           <div class="timeline-company">IMTA</div>
           <p class="timeline-desc">
-            Developing end-to-end AI solutions combining frontend, backend, and machine learning technologies. Leading projects that integrate AI capabilities into web applications and enterprise systems.
+            Developing end-to-end AI solutions combining frontend, backend, and machine learning technologies. Leading projects that integrate sophisticated AI capabilities (LLMs, RAG) into web applications and enterprise systems to drive automation and efficiency.
           </p>
         </div>
         
         <!-- Item 2 -->
         <div class="timeline-item gsap-fade">
           <div class="timeline-dot"></div>
-          <div class="timeline-date">Feb 2026 — Feb 2027</div>
+          <div class="timeline-date">February 2026 — February 2027</div>
           <h3 class="timeline-title">ML Engineer</h3>
           <div class="timeline-company">DevFera</div>
           <p class="timeline-desc">
-            Focused on developing and deploying machine learning models for business applications. Worked on predictive analytics, computer vision, and AI-powered solutions, contributing significantly to product development.
+            Focused on developing and deploying machine learning models for critical business applications. Spearheaded predictive analytics, computer vision projects, and AI-powered solutions, directly contributing to the company's core AI product development lifecycle.
           </p>
         </div>
         
         <!-- Item 3 -->
         <div class="timeline-item gsap-fade">
           <div class="timeline-dot"></div>
-          <div class="timeline-date">Feb 2026 — May 2026</div>
+          <div class="timeline-date">February 2026 — May 2026</div>
           <h3 class="timeline-title">Intern - Data Science</h3>
           <div class="timeline-company">Jazz</div>
           <p class="timeline-desc">
-            Worked on data analysis and ML projects, gaining practical experience in data preprocessing, building predictive models, and generating business insights. Collaborated on optimizing data pipelines.
+            Completed a rigorous 3-month internship focusing on data analysis and machine learning. Gained practical experience in data preprocessing, building predictive models, and generating actionable business insights. Collaborated closely with senior data scientists to optimize data pipelines.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
+  <!-- Projects Section (All 11 Projects Restored) -->
   <section class="section" id="projects">
     <div class="container">
       <div class="section-header gsap-fade">
-        <h2 class="section-title">Selected Work</h2>
-        <p class="section-subtitle">A showcase of data analytics, machine learning, and AI projects.</p>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">A showcase of end-to-end Machine Learning, Deep Learning, and Data Analytics solutions.</p>
       </div>
       
       <div class="projects-grid">
@@ -250,6 +279,9 @@
         <div class="project-card gsap-fade">
           <div class="project-image">
             <img src="assets/images/thumbnail/WhatsApp Image 2026-02-26 at 12.26.29 PM.jpeg" alt="Sales Data Analysis">
+            <div class="project-overlay">
+              <a href="https://github.com/sohail-ahmed-26/Mentorship-Program-Devsil/blob/main/Projects/Project%201/sales_dataset.ipynb" target="_blank" class="project-icon-link" aria-label="GitHub"><i data-lucide="github"></i></a>
+            </div>
           </div>
           <div class="project-content">
             <div class="project-tags">
@@ -257,10 +289,7 @@
               <span class="tag">Python</span>
             </div>
             <h3 class="project-title">Sales Data Analysis</h3>
-            <p class="project-category">In-depth exploratory data analysis and insight generation for retail sales datasets.</p>
-            <a href="https://github.com/sohail-ahmed-26/Mentorship-Program-Devsil/blob/main/Projects/Project%201/sales_dataset.ipynb" target="_blank" class="project-link">
-              <i data-lucide="github" width="18" height="18"></i> View Source
-            </a>
+            <p class="project-description">In-depth exploratory data analysis and insight generation for retail sales datasets.</p>
           </div>
         </div>
 
@@ -268,24 +297,172 @@
         <div class="project-card gsap-fade">
           <div class="project-image">
             <img src="assets/images/thumbnail/costumer_churn.png.jpeg" alt="Customer Churn Analysis">
+            <div class="project-overlay">
+              <a href="https://github.com/sohail-ahmed-26/Mentorship-Program-Devsil/blob/main/costumer_chorn_analysis%20(1).ipynb" target="_blank" class="project-icon-link" aria-label="GitHub"><i data-lucide="github"></i></a>
+            </div>
           </div>
           <div class="project-content">
             <div class="project-tags">
               <span class="tag">Predictive Analytics</span>
-              <span class="tag">ML</span>
+              <span class="tag">Machine Learning</span>
             </div>
             <h3 class="project-title">Customer Churn Analysis</h3>
-            <p class="project-category">Predicting customer retention and identifying key risk factors using machine learning models.</p>
-            <a href="https://github.com/sohail-ahmed-26/Mentorship-Program-Devsil/blob/main/costumer_chorn_analysis%20(1).ipynb" target="_blank" class="project-link">
-              <i data-lucide="github" width="18" height="18"></i> View Source
-            </a>
+            <p class="project-description">Predicting customer retention and identifying key risk factors using robust machine learning models.</p>
           </div>
         </div>
 
         <!-- Project 3 -->
         <div class="project-card gsap-fade">
           <div class="project-image">
+            <img src="assets/images/thumbnail/employee-attrition.png.jpeg" alt="Employee Attrition Analysis">
+            <div class="project-overlay">
+              <a href="https://github.com/sohail-ahmed-26/Employee-Attrition-Analysis/blob/main/Employee%20Attrition%20Analysis.ipynb" target="_blank" class="project-icon-link" aria-label="GitHub"><i data-lucide="github"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Data Analytics</span>
+              <span class="tag">HR Tech</span>
+            </div>
+            <h3 class="project-title">Employee Attrition Analysis</h3>
+            <p class="project-description">Analyzing workforce data to understand and predict employee turnover rates and drivers.</p>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card gsap-fade">
+          <div class="project-image">
+            <img src="assets/images/thumbnail/emergency.png.jpeg" alt="Emergency Room Analysis">
+            <div class="project-overlay">
+              <a href="https://github.com/sohail-ahmed-26/emergency-_room_analysis/blob/main/ER.ipynb" target="_blank" class="project-icon-link" aria-label="GitHub"><i data-lucide="github"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Data Analytics</span>
+              <span class="tag">Healthcare</span>
+            </div>
+            <h3 class="project-title">Hospital Emergency Room Load Analysis</h3>
+            <p class="project-description">Analyzing hospital emergency room traffic patterns to optimize staffing and reduce patient wait times.</p>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card gsap-fade">
+          <div class="project-image">
+            <img src="assets/images/thumbnail/heart_disease.png.jpeg" alt="Heart Disease Prediction">
+            <div class="project-overlay">
+              <a href="https://github.com/sohail-ahmed-26/00_Project/blob/main/01_Heart_disease_prediction/heart_disease_prediction.ipynb" target="_blank" class="project-icon-link" aria-label="GitHub"><i data-lucide="github"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Classification</span>
+            </div>
+            <h3 class="project-title">Heart Disease Prediction</h3>
+            <p class="project-description">Diagnostic classification model predicting the likelihood of heart disease based on clinical parameters.</p>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card gsap-fade">
+          <div class="project-image">
+            <img src="assets/images/thumbnail/social.png.jpeg" alt="Social Media Engagement">
+            <div class="project-overlay">
+              <a href="https://github.com/sohail-ahmed-26/project_6/blob/main/dataset/social_media_engagement_prediction.ipynb" target="_blank" class="project-icon-link" aria-label="GitHub"><i data-lucide="github"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Regression</span>
+            </div>
+            <h3 class="project-title">Social Media Engagement Prediction</h3>
+            <p class="project-description">Predictive modeling of social media engagement metrics to optimize content strategy.</p>
+          </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="project-card gsap-fade">
+          <div class="project-image">
+            <img src="assets/images/thumbnail/healthcare.png.png" alt="Healthcare Cost Prediction">
+            <div class="project-overlay">
+              <a href="https://github.com/sohail-ahmed-26/project_08/blob/main/dataset/insurance.ipynb" target="_blank" class="project-icon-link" aria-label="GitHub"><i data-lucide="github"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Segmentation</span>
+            </div>
+            <h3 class="project-title">Healthcare Cost Prediction & Segmentation</h3>
+            <p class="project-description">Patient segmentation and healthcare cost forecasting models to optimize insurance resource allocation.</p>
+          </div>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="project-card gsap-fade">
+          <div class="project-image">
+            <img src="assets/images/thumbnail/unsupervised.png.jpeg" alt="Unsupervised & Deep Learning">
+            <div class="project-overlay">
+              <a href="https://github.com/sohail-ahmed-26/project-9-ML-DL/blob/main/Unsupervised_ML_%26_Deep_Learning.ipynb" target="_blank" class="project-icon-link" aria-label="GitHub"><i data-lucide="github"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Unsupervised ML</span>
+            </div>
+            <h3 class="project-title">Unsupervised & Deep Learning</h3>
+            <p class="project-description">Exploration of clustering algorithms combined with deep neural networks for complex pattern discovery.</p>
+          </div>
+        </div>
+
+        <!-- Project 9 -->
+        <div class="project-card gsap-fade">
+          <div class="project-image">
+            <img src="assets/images/thumbnail/cnn pic.png.jpeg" alt="CNN & LSTM">
+            <div class="project-overlay">
+              <a href="https://github.com/sohail-ahmed-26/CNN-project-_10/blob/main/Deep_Learning_Project_using_CNN_(Computer_Vision)_and_LSTM_(NLP).ipynb" target="_blank" class="project-icon-link" aria-label="GitHub"><i data-lucide="github"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">CNN</span>
+              <span class="tag">LSTM</span>
+              <span class="tag">Computer Vision</span>
+            </div>
+            <h3 class="project-title">Deep Learning: CV (CNN) & NLP (LSTM)</h3>
+            <p class="project-description">Advanced deep learning architecture utilizing Convolutional Neural Networks for vision and LSTMs for text processing.</p>
+          </div>
+        </div>
+
+        <!-- Project 10 -->
+        <div class="project-card gsap-fade">
+          <div class="project-image">
+            <img src="assets/images/thumbnail/time_series.jpeg" alt="Time Series Forecasting">
+            <div class="project-overlay">
+              <a href="https://github.com/sohail-ahmed-26/project_11/blob/main/time_series_forcasting.ipynb" target="_blank" class="project-icon-link" aria-label="GitHub"><i data-lucide="github"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Time Series</span>
+              <span class="tag">Transfer Learning</span>
+            </div>
+            <h3 class="project-title">Time Series Forecasting & Transfer Learning</h3>
+            <p class="project-description">Applying sophisticated transfer learning techniques to forecast sequential time-series data accurately.</p>
+          </div>
+        </div>
+
+        <!-- Project 11 -->
+        <div class="project-card gsap-fade">
+          <div class="project-image">
             <img src="assets/images/thumbnail/streamlit.jpeg" alt="Full Stack AI App">
+            <div class="project-overlay">
+              <a href="https://github.com/sohail-ahmed-26/project_12/blob/main/FULL_STACK_AI_APPLICATION_DEVELOPMENT_USING_STREAMLIT%2C_FLASK_AND_FASTAPI.ipynb" target="_blank" class="project-icon-link" aria-label="GitHub"><i data-lucide="github"></i></a>
+            </div>
           </div>
           <div class="project-content">
             <div class="project-tags">
@@ -294,65 +471,7 @@
               <span class="tag">Flask</span>
             </div>
             <h3 class="project-title">Full Stack AI Application</h3>
-            <p class="project-category">End-to-end AI application development demonstrating integration of robust ML models with modern web frameworks.</p>
-            <a href="https://github.com/sohail-ahmed-26/project_12/blob/main/FULL_STACK_AI_APPLICATION_DEVELOPMENT_USING_STREAMLIT%2C_FLASK_AND_FASTAPI.ipynb" target="_blank" class="project-link">
-              <i data-lucide="github" width="18" height="18"></i> View Source
-            </a>
-          </div>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="project-card gsap-fade">
-          <div class="project-image">
-            <img src="assets/images/thumbnail/cnn pic.png.jpeg" alt="CNN & LSTM">
-          </div>
-          <div class="project-content">
-            <div class="project-tags">
-              <span class="tag">Deep Learning</span>
-              <span class="tag">CNN</span>
-              <span class="tag">LSTM</span>
-            </div>
-            <h3 class="project-title">Computer Vision & NLP Deep Learning</h3>
-            <p class="project-category">Advanced deep learning architecture utilizing Convolutional Neural Networks and LSTMs for complex pattern recognition.</p>
-            <a href="https://github.com/sohail-ahmed-26/CNN-project-_10/blob/main/Deep_Learning_Project_using_CNN_(Computer_Vision)_and_LSTM_(NLP).ipynb" target="_blank" class="project-link">
-              <i data-lucide="github" width="18" height="18"></i> View Source
-            </a>
-          </div>
-        </div>
-
-        <!-- Project 5 -->
-        <div class="project-card gsap-fade">
-          <div class="project-image">
-            <img src="assets/images/thumbnail/healthcare.png.png" alt="Healthcare Prediction">
-          </div>
-          <div class="project-content">
-            <div class="project-tags">
-              <span class="tag">Machine Learning</span>
-              <span class="tag">Healthcare</span>
-            </div>
-            <h3 class="project-title">Healthcare Cost Prediction</h3>
-            <p class="project-category">Patient segmentation and healthcare cost forecasting models to optimize resource allocation.</p>
-            <a href="https://github.com/sohail-ahmed-26/project_08/blob/main/dataset/insurance.ipynb" target="_blank" class="project-link">
-              <i data-lucide="github" width="18" height="18"></i> View Source
-            </a>
-          </div>
-        </div>
-
-        <!-- Project 6 -->
-        <div class="project-card gsap-fade">
-          <div class="project-image">
-            <img src="assets/images/thumbnail/emergency.png.jpeg" alt="Emergency Room Analysis">
-          </div>
-          <div class="project-content">
-            <div class="project-tags">
-              <span class="tag">Data Analytics</span>
-              <span class="tag">Optimization</span>
-            </div>
-            <h3 class="project-title">Emergency Room Load Analysis</h3>
-            <p class="project-category">Analyzing hospital emergency room traffic to improve staffing and reduce wait times.</p>
-            <a href="https://github.com/sohail-ahmed-26/emergency-_room_analysis/blob/main/ER.ipynb" target="_blank" class="project-link">
-              <i data-lucide="github" width="18" height="18"></i> View Source
-            </a>
+            <p class="project-description">End-to-end AI application development demonstrating integration of robust ML models with modern web backend frameworks.</p>
           </div>
         </div>
 
@@ -364,23 +483,67 @@
   <section class="section" id="contact">
     <div class="container">
       <div class="section-header gsap-fade">
-        <h2 class="section-title">Let's Connect</h2>
-        <p class="section-subtitle">Open for consultancy, full-time roles, or interesting collaborations.</p>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">Open for AI consultancy, full-time engineering roles, and innovative collaborations.</p>
       </div>
       
-      <div class="contact-container gsap-fade">
-        <form action="#" class="form">
-          <div class="form-group">
-            <input type="text" class="form-input" placeholder="Your Name" required>
-          </div>
-          <div class="form-group">
-            <input type="email" class="form-input" placeholder="Your Email" required>
-          </div>
-          <div class="form-group">
-            <textarea class="form-input" placeholder="How can I help you?" required></textarea>
-          </div>
-          <button type="submit" class="btn-submit">Send Message</button>
-        </form>
+      <div class="contact-grid gsap-fade">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p>Feel free to reach out to me directly or connect through my professional networks.</p>
+          
+          <ul class="contact-list">
+            <li>
+              <div class="contact-icon"><i data-lucide="mail"></i></div>
+              <div class="contact-details">
+                <span>Email</span>
+                <a href="mailto:ahmed241126@gmail.com">ahmed241126@gmail.com</a>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon"><i data-lucide="phone"></i></div>
+              <div class="contact-details">
+                <span>Phone</span>
+                <a href="tel:+923409368316">+92 340 9368316</a>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+              <div class="contact-details">
+                <span>Location</span>
+                <p>Mansehra, KPK, Pakistan</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="contact-form-container">
+          <form action="#" class="form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" class="form-input" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" class="form-input" placeholder="john@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" class="form-input" placeholder="Project Inquiry" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" class="form-input" placeholder="How can I help you?" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <span>Send Message</span>
+              <i data-lucide="send" width="18" height="18"></i>
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
@@ -388,14 +551,26 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <div class="social-links">
-        <a href="https://github.com/sohail-ahmed-26" target="_blank" class="social-link"><i data-lucide="github"></i></a>
-        <a href="https://www.linkedin.com/in/sohail-ahmed-devsil" target="_blank" class="social-link"><i data-lucide="linkedin"></i></a>
-        <a href="https://x.com/ahmed241126" target="_blank" class="social-link"><i data-lucide="twitter"></i></a>
-        <a href="https://www.instagram.com/sohailahmed5990" target="_blank" class="social-link"><i data-lucide="instagram"></i></a>
-        <a href="mailto:ahmed241126@gmail.com" class="social-link"><i data-lucide="mail"></i></a>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-dot"></span> Sohail.dev
+        </div>
+        
+        <div class="social-links">
+          <!-- All Social Links Restored -->
+          <a href="https://github.com/sohail-ahmed-26" target="_blank" class="social-link" aria-label="GitHub"><i data-lucide="github"></i></a>
+          <a href="https://www.linkedin.com/in/sohail-ahmed-devsil" target="_blank" class="social-link" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+          <a href="https://www.kaggle.com/sohail2411126" target="_blank" class="social-link kaggle-icon" aria-label="Kaggle">
+            <!-- Custom Kaggle SVG or Image since Lucide doesn't have it natively, using text fallback or strong styling -->
+            <strong>K</strong>
+          </a>
+          <a href="https://x.com/ahmed241126" target="_blank" class="social-link" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+          <a href="https://www.instagram.com/sohailahmed5990" target="_blank" class="social-link" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+        </div>
       </div>
-      <p class="footer-text">&copy; 2026 Sohail Ahmed. All rights reserved.</p>
+      <div class="footer-bottom">
+        <p class="footer-text">&copy; 2026 Sohail Ahmed. Building the future of AI. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
