@@ -840,3 +840,278 @@ footer {
   color: var(--cyan);
   width: 18px; height: 18px;
 }
+
+/* ============================================================
+   SKILL BADGE COLOR VARIANTS
+   ============================================================ */
+.sk-ai     { --sk-color: var(--cyan);   --sk-bg: rgba(34,211,238,0.07);  --sk-border: rgba(34,211,238,0.18); }
+.sk-prog   { --sk-color: var(--purple); --sk-bg: rgba(168,85,247,0.07);  --sk-border: rgba(168,85,247,0.18); }
+.sk-fw     { --sk-color: var(--blue);   --sk-bg: rgba(59,130,246,0.07);  --sk-border: rgba(59,130,246,0.18); }
+.sk-cloud  { --sk-color: #f59e0b;       --sk-bg: rgba(245,158,11,0.07);  --sk-border: rgba(245,158,11,0.18); }
+.sk-db     { --sk-color: #10b981;       --sk-bg: rgba(16,185,129,0.07);  --sk-border: rgba(16,185,129,0.18); }
+.sk-tool   { --sk-color: var(--purple); --sk-bg: rgba(168,85,247,0.07);  --sk-border: rgba(168,85,247,0.18); }
+.sk-soft   { --sk-color: #f43f5e;       --sk-bg: rgba(244,63,94,0.07);   --sk-border: rgba(244,63,94,0.18); }
+
+.skill-badge.sk-ai, .skill-badge.sk-prog, .skill-badge.sk-fw,
+.skill-badge.sk-cloud, .skill-badge.sk-db, .skill-badge.sk-tool, .skill-badge.sk-soft {
+  color: var(--sk-color);
+  background: var(--sk-bg);
+  border-color: var(--sk-border);
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.83rem;
+  font-weight: 500;
+  padding: 0.55rem 1rem;
+  cursor: default;
+}
+.skill-badge.sk-ai:hover, .skill-badge.sk-prog:hover, .skill-badge.sk-fw:hover,
+.skill-badge.sk-cloud:hover, .skill-badge.sk-db:hover, .skill-badge.sk-tool:hover, .skill-badge.sk-soft:hover {
+  filter: brightness(1.25);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+/* ============================================================
+   SKILL CATEGORY — override for heading color
+   ============================================================ */
+.skill-category {
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 2rem;
+}
+.skill-category h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+}
+
+/* ============================================================
+   PROJECT FOOTER BUTTONS (Dual: Live Demo + GitHub)
+   ============================================================ */
+.proj-desc { flex: 1; }
+.proj-footer {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  flex-wrap: wrap;
+}
+.btn-demo {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background: var(--cyan);
+  color: var(--bg-primary);
+  border: none; border-radius: 8px;
+  font-size: 0.83rem; font-weight: 700;
+  cursor: pointer;
+  transition: transform var(--fast), box-shadow var(--fast), opacity var(--fast);
+  text-decoration: none;
+  font-family: var(--font-sans);
+}
+.btn-demo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(34,211,238,0.3);
+  opacity: 0.92;
+}
+.btn-demo svg { width: 13px; height: 13px; flex-shrink: 0; }
+
+.btn-github {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background: rgba(255,255,255,0.05);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.83rem; font-weight: 600;
+  cursor: pointer;
+  transition: background var(--fast), border-color var(--fast), transform var(--fast);
+  text-decoration: none;
+  font-family: var(--font-sans);
+}
+.btn-github:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.25);
+  transform: translateY(-2px);
+}
+.btn-github svg { width: 13px; height: 13px; flex-shrink: 0; }
+
+/* ============================================================
+   BACK TO TOP BUTTON
+   ============================================================ */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem; right: 2rem;
+  width: 46px; height: 46px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  opacity: 0; pointer-events: none;
+  transition: opacity var(--normal), transform var(--fast), background var(--fast), color var(--fast);
+  z-index: 999;
+}
+.back-to-top.visible { opacity: 1; pointer-events: all; }
+.back-to-top:hover {
+  background: var(--cyan);
+  color: var(--bg-primary);
+  border-color: var(--cyan);
+  transform: translateY(-3px);
+}
+
+/* ============================================================
+   HERO TYPEWRITER / ANIMATED SKILLS
+   ============================================================ */
+.animated-skills-wrapper {
+  font-family: var(--font-mono);
+  font-size: 1.15rem;
+  color: var(--cyan);
+  margin-bottom: 1.75rem;
+  min-height: 1.8em;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+.typewriter-prefix {
+  color: var(--text-muted);
+  margin-right: 0.25rem;
+}
+#typewriter {
+  color: var(--cyan);
+  font-weight: 600;
+}
+.cursor {
+  display: inline-block;
+  color: var(--cyan);
+  animation: blink-cursor 0.75s step-end infinite;
+  font-weight: 300;
+  margin-left: 2px;
+}
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ============================================================
+   HERO LABEL (home)
+   ============================================================ */
+.hero-label {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--cyan);
+  margin-bottom: 0.5rem;
+  display: flex; align-items: center; gap: 0.75rem;
+}
+
+/* ============================================================
+   SERVICES GRID (index.html)
+   ============================================================ */
+.section-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+.section-header p { color: var(--text-secondary); font-size: 1.1rem; max-width: 560px; margin: 0 auto; }
+.section-header h2 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 800; letter-spacing: -0.03em;
+  margin-bottom: 0.75rem;
+}
+.section-header .page-label {
+  font-family: var(--font-mono);
+  font-size: 0.85rem; font-weight: 600;
+  color: var(--cyan);
+  letter-spacing: 0.12em; text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+.service-card {
+  padding: 1.75rem;
+  border-radius: var(--radius-lg);
+  transition: transform var(--normal), border-color var(--normal), box-shadow var(--normal);
+}
+.service-card:hover {
+  transform: translateY(-6px);
+}
+.service-icon {
+  width: 52px; height: 52px;
+  border-radius: 12px;
+  background: rgba(34,211,238,0.07);
+  border: 1px solid rgba(34,211,238,0.15);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--cyan);
+  margin-bottom: 1.1rem;
+}
+.service-card h3 {
+  font-size: 1rem; font-weight: 700; margin-bottom: 0.6rem;
+}
+.service-card p {
+  font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;
+}
+
+/* ============================================================
+   ABOUT PAGE — service cards small
+   ============================================================ */
+.service-grid-lg {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.service-card-sm {
+  padding: 1.25rem;
+  border-radius: var(--radius);
+  transition: var(--normal);
+}
+.service-card-sm:hover {
+  transform: translateY(-4px);
+}
+.svc-icon {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+.service-card-sm h4 {
+  font-size: 0.95rem; font-weight: 700; margin-bottom: 0.4rem;
+}
+.service-card-sm p {
+  font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;
+}
+
+/* ============================================================
+   CERTIFICATIONS — enhanced
+   ============================================================ */
+.cert-card .cert-body {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+.cert-card {
+  border: 1px solid var(--border);
+  transition: transform var(--normal), border-color var(--normal), box-shadow var(--normal);
+}
+.cert-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-glow);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* ============================================================
+   RESPONSIVE ADDITIONS
+   ============================================================ */
+@media (max-width: 768px) {
+  .services-grid { grid-template-columns: 1fr; }
+  .service-grid-lg { grid-template-columns: repeat(2, 1fr); }
+  .proj-footer { flex-direction: row; }
+  .animated-skills-wrapper { font-size: 0.95rem; }
+  .back-to-top { bottom: 1.25rem; right: 1.25rem; }
+}
+@media (max-width: 480px) {
+  .service-grid-lg { grid-template-columns: 1fr; }
+  .hero-actions { flex-direction: column; align-items: flex-start; }
+}

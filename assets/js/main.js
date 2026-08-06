@@ -50,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
       toggle.classList.toggle('open');
       mobileNav.classList.toggle('open');
     });
-    // Close on link click
     mobileNav.querySelectorAll('.nav-link').forEach(l => {
       l.addEventListener('click', () => {
         toggle.classList.remove('open');
@@ -65,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     tl.from('.hero-label', { y: 20, opacity: 0, duration: 0.7, ease: 'power3.out' })
       .from('.hero h1', { y: 30, opacity: 0, duration: 0.8, ease: 'power3.out' }, '-=0.4')
       .from('.hero-role', { y: 25, opacity: 0, duration: 0.7, ease: 'power3.out' }, '-=0.5')
+      .from('.animated-skills-wrapper', { y: 20, opacity: 0, duration: 0.6, ease: 'power3.out' }, '-=0.4')
       .from('.hero-desc', { y: 20, opacity: 0, duration: 0.6, ease: 'power3.out' }, '-=0.4')
       .from('.hero-actions', { y: 20, opacity: 0, duration: 0.6, ease: 'power3.out' }, '-=0.4')
       .from('.profile-ring', { scale: 0.85, opacity: 0, duration: 1, ease: 'back.out(1.4)' }, '-=0.6')
@@ -93,47 +93,67 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     );
   });
+
+  // ── Back to Top Button ────────────────────────────────────
+  const btt = document.getElementById('back-to-top');
+  if (btt) {
+    window.addEventListener('scroll', () => {
+      btt.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+    btt.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
 });
 
 // ── Interactive Demo Modal ──────────────────────────────────────
 window.openDemo = function(type, url, title, fallbackUrl) {
   const overlay = document.createElement('div');
   overlay.className = 'demo-modal-overlay';
-  
+  overlay.addEventListener('click', e => { if (e.target === overlay) overlay.remove(); });
+
   const modal = document.createElement('div');
   modal.className = 'demo-modal';
-  
+
   const header = document.createElement('div');
   header.className = 'demo-modal-header';
-  header.innerHTML = `<h3>${title}</h3><button class="demo-close" onclick="this.closest('.demo-modal-overlay').remove()"><i data-lucide="x"></i></button>`;
-  
+  header.innerHTML = `<h3>${title}</h3><button class="demo-close" onclick="this.closest('.demo-modal-overlay').remove()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>`;
+
   const body = document.createElement('div');
   body.className = 'demo-modal-body';
-  
-  if (url) {
+
+  if (url && url !== '' && url !== '#') {
     const iframe = document.createElement('iframe');
     iframe.src = url;
     iframe.className = 'demo-iframe';
+    iframe.setAttribute('allowfullscreen', '');
     body.appendChild(iframe);
   } else {
     const placeholder = document.createElement('div');
     placeholder.className = 'demo-placeholder';
     placeholder.innerHTML = `
-      <div class="demo-icon"><i data-lucide="monitor-play" style="width:48px;height:48px;"></i></div>
-      <h4 style="font-size:1.5rem;margin-bottom:1rem;color:#fff;">Interactive Demo Not Available</h4>
-      <p style="margin-bottom:2rem;max-width:400px;margin-left:auto;margin-right:auto;">This project requires a backend environment or local execution and cannot be embedded directly in the browser.</p>
-      <a href="${fallbackUrl}" target="_blank" class="btn btn-primary"><i data-lucide="github"></i> View Source Code</a>
+      <div class="demo-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/><path d="M12 17v5"/><path d="M8 22h8"/></svg>
+      </div>
+      <h4 style="font-size:1.5rem;margin-bottom:1rem;color:#fff;">Run This Project Locally</h4>
+      <p style="margin-bottom:0.75rem;max-width:450px;margin-left:auto;margin-right:auto;color:#8892b0;">This is a Python application that runs locally. Clone the repository and follow the setup instructions to launch it.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem;">
+        <a href="${fallbackUrl}" target="_blank" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.75rem 1.5rem;background:#f0f4ff;color:#07070a;border-radius:10px;font-weight:700;text-decoration:none;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View Source Code
+        </a>
+      </div>
     `;
     body.appendChild(placeholder);
   }
-  
+
   modal.appendChild(header);
   modal.appendChild(body);
   overlay.appendChild(modal);
   document.body.appendChild(overlay);
-  
-  lucide.createIcons();
-  
+
   gsap.fromTo(overlay, {opacity: 0}, {opacity: 1, duration: 0.3});
   gsap.fromTo(modal, {scale: 0.8, y: 20}, {scale: 1, y: 0, duration: 0.4, ease: 'back.out(1.5)'});
 };
@@ -141,14 +161,16 @@ window.openDemo = function(type, url, title, fallbackUrl) {
 // ── Typewriter Effect for Hero ────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   const words = [
-    "Data Analytics", "Machine Learning", "Deep Learning", "Generative AI", 
-    "AI Agents", "Agentic AI", "Computer Vision", "NLP", "RAG", 
-    "Prompt Engineering", "AI Automation", "FastAPI", "Python"
+    "Machine Learning", "Deep Learning", "Computer Vision",
+    "Generative AI", "AI Agents", "Agentic AI",
+    "RAG", "Prompt Engineering", "Python",
+    "FastAPI", "Automation", "MLOps",
+    "Data Science", "NLP", "LangChain"
   ];
   let i = 0;
   let timer;
   const el = document.getElementById('typewriter');
-  
+
   if (el) {
     function typingEffect() {
       let word = words[i].split('');
@@ -156,14 +178,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (word.length > 0) {
           el.innerHTML += word.shift();
         } else {
-          setTimeout(deletingEffect, 2000);
+          setTimeout(deletingEffect, 2200);
           return false;
         }
-        timer = setTimeout(loopTyping, 100);
+        timer = setTimeout(loopTyping, 90);
       };
       loopTyping();
     }
-    
+
     function deletingEffect() {
       let word = words[i].split('');
       var loopDeleting = function() {
@@ -171,15 +193,11 @@ document.addEventListener('DOMContentLoaded', () => {
           word.pop();
           el.innerHTML = word.join('');
         } else {
-          if (words.length > (i + 1)) {
-            i++;
-          } else {
-            i = 0;
-          }
-          setTimeout(typingEffect, 500);
+          i = (i + 1) % words.length;
+          setTimeout(typingEffect, 400);
           return false;
         }
-        timer = setTimeout(loopDeleting, 50);
+        timer = setTimeout(loopDeleting, 45);
       };
       loopDeleting();
     }
