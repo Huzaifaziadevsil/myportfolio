@@ -1,1502 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sohail Ahmed - Portfolio</title>
-
-  <!--
-    - favicon
-  -->
+  <title>Sohail Ahmed | Senior AI Engineer & Data Scientist</title>
+  <meta name="description" content="Portfolio of Sohail Ahmed, a Data Scientist, AI Engineer, and AI Automation Consultant building production-grade AI systems.">
+  
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-<!--- 
-  hi
-  -->
-  <!--
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-
 <body>
 
-  <!--
-    - #MAIN
-  -->
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="logo">
+        <span class="logo-dot"></span>
+        Sohail.dev
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <main>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-glow"></div>
+    <div class="container hero-content">
+      <div class="hero-text-content">
+        <h1 class="gsap-hero">Building <br><span class="text-gradient">Production-Grade</span><br> AI Systems.</h1>
+        <p class="hero-description gsap-hero">
+          I'm Sohail Ahmed, a Data Scientist and Full Stack AI Engineer specializing in Machine Learning, Generative AI, and AI Automation.
+        </p>
+        <div class="hero-actions gsap-hero">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-visual gsap-hero-img">
+        <div class="profile-frame">
+          <div class="profile-img-container">
+            <img src="assets/images/sohailahmed26.png.jpeg" alt="Sohail Ahmed">
+          </div>
+        </div>
+        <div class="tech-badge badge-1">Python</div>
+        <div class="tech-badge badge-2">Machine Learning</div>
+        <div class="tech-badge badge-3">LLMs</div>
+      </div>
+    </div>
+  </section>
 
-    <!--
-      - #SIDEBAR
-    -->
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header gsap-fade">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Bridging the gap between data and real-world impact.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text gsap-fade">
+          <p>
+            In the current AI era, I found my passion in solving complex business problems through data. Starting with foundational online courses, I quickly transitioned to real-world impact as an intern at <strong>Devsinc</strong> and a freelancer on <strong>Upwork</strong>.
+          </p>
+          <p>
+            Today, as a <strong>Full Stack AI Engineer</strong> at IMTA, I focus on developing end-to-end AI solutions. I don't just build models; I build functional AI applications, fine-tune LLMs, and automate repetitive workflows to save human time and drive business value.
+          </p>
+          <p>
+            Whether it's data analytics, computer vision, or deploying scalable MLOps pipelines on AWS, my goal is always to deliver robust, overfitting-free solutions that seamlessly integrate into production environments.
+          </p>
+        </div>
+        <div class="about-stats gsap-fade">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number text-gradient">3+</div>
+              <div class="stat-label">Years of Experience</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number text-gradient">20+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number text-gradient">15+</div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number text-gradient">100%</div>
+              <div class="stat-label">Commitment</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="assets/images/sohailahmed26.png.jpeg" alt="Sohail Ahmed" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" Sohail Ahmed">Sohail Ahmed</h1>
-
-          <p class="title">
-    <span>Data Scientist</span>
-    <span class="divider">|</span>
-    <span>AI Engineer</span>
-</p>
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header gsap-fade">
+        <h2 class="section-title">Technical Expertise</h2>
+        <p class="section-subtitle">The tools and technologies I use to build intelligent systems.</p>
+      </div>
+      
+      <div class="skills-grid">
+        <!-- AI / ML Core -->
+        <div class="skill-category gsap-fade">
+          <div class="category-header">
+            <div class="category-icon"><i data-lucide="brain-circuit"></i></div>
+            <h3 class="category-title">AI & Data Science</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item-row">
+              <span class="skill-name">Machine Learning</span>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 83%"></div></div>
+            </div>
+            <div class="skill-item-row">
+              <span class="skill-name">Data Analytics</span>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 80%"></div></div>
+            </div>
+            <div class="skill-item-row">
+              <span class="skill-name">Generative AI</span>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 60%"></div></div>
+            </div>
+            <div class="skill-item-row">
+              <span class="skill-name">Computer Vision</span>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 55%"></div></div>
+            </div>
+          </div>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <!-- Engineering / Automation -->
+        <div class="skill-category gsap-fade">
+          <div class="category-header">
+            <div class="category-icon"><i data-lucide="bot"></i></div>
+            <h3 class="category-title">Engineering</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item-row">
+              <span class="skill-name">AI Automation</span>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 60%"></div></div>
+            </div>
+            <div class="skill-item-row">
+              <span class="skill-name">AI Agents</span>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 70%"></div></div>
+            </div>
+            <div class="skill-item-row">
+              <span class="skill-name">MLOps</span>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 50%"></div></div>
+            </div>
+            <div class="skill-item-row">
+              <span class="skill-name">Consultancy</span>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%"></div></div>
+            </div>
+          </div>
+        </div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+        <!-- Tools & Cloud -->
+        <div class="skill-category gsap-fade">
+          <div class="category-header">
+            <div class="category-icon"><i data-lucide="cloud"></i></div>
+            <h3 class="category-title">Tools & Cloud</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item-row">
+              <span class="skill-name">GitHub / Git</span>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 75%"></div></div>
+            </div>
+            <div class="skill-item-row">
+              <span class="skill-name">AWS</span>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 40%"></div></div>
+            </div>
+            <div class="skill-item-row">
+              <span class="skill-name">SQL / DBs</span>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 65%"></div></div>
+            </div>
+            <div class="skill-item-row">
+              <span class="skill-name">Docker</span>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 30%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header gsap-fade">
+        <h2 class="section-title">Experience</h2>
+        <p class="section-subtitle">My professional journey in the tech industry.</p>
+      </div>
+      
+      <div class="timeline">
+        <!-- Item 1 -->
+        <div class="timeline-item gsap-fade">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Aug 2025 — Present</div>
+          <h3 class="timeline-title">Full Stack AI Engineer</h3>
+          <div class="timeline-company">IMTA</div>
+          <p class="timeline-desc">
+            Developing end-to-end AI solutions combining frontend, backend, and machine learning technologies. Leading projects that integrate AI capabilities into web applications and enterprise systems.
+          </p>
+        </div>
+        
+        <!-- Item 2 -->
+        <div class="timeline-item gsap-fade">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Feb 2026 — Feb 2027</div>
+          <h3 class="timeline-title">ML Engineer</h3>
+          <div class="timeline-company">DevFera</div>
+          <p class="timeline-desc">
+            Focused on developing and deploying machine learning models for business applications. Worked on predictive analytics, computer vision, and AI-powered solutions, contributing significantly to product development.
+          </p>
+        </div>
+        
+        <!-- Item 3 -->
+        <div class="timeline-item gsap-fade">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Feb 2026 — May 2026</div>
+          <h3 class="timeline-title">Intern - Data Science</h3>
+          <div class="timeline-company">Jazz</div>
+          <p class="timeline-desc">
+            Worked on data analysis and ML projects, gaining practical experience in data preprocessing, building predictive models, and generating business insights. Collaborated on optimizing data pipelines.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header gsap-fade">
+        <h2 class="section-title">Selected Work</h2>
+        <p class="section-subtitle">A showcase of data analytics, machine learning, and AI projects.</p>
+      </div>
+      
+      <div class="projects-grid">
+        
+        <!-- Project 1 -->
+        <div class="project-card gsap-fade">
+          <div class="project-image">
+            <img src="assets/images/thumbnail/WhatsApp Image 2026-02-26 at 12.26.29 PM.jpeg" alt="Sales Data Analysis">
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Data Analytics</span>
+              <span class="tag">Python</span>
+            </div>
+            <h3 class="project-title">Sales Data Analysis</h3>
+            <p class="project-category">In-depth exploratory data analysis and insight generation for retail sales datasets.</p>
+            <a href="https://github.com/sohail-ahmed-26/Mentorship-Program-Devsil/blob/main/Projects/Project%201/sales_dataset.ipynb" target="_blank" class="project-link">
+              <i data-lucide="github" width="18" height="18"></i> View Source
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card gsap-fade">
+          <div class="project-image">
+            <img src="assets/images/thumbnail/costumer_churn.png.jpeg" alt="Customer Churn Analysis">
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Predictive Analytics</span>
+              <span class="tag">ML</span>
+            </div>
+            <h3 class="project-title">Customer Churn Analysis</h3>
+            <p class="project-category">Predicting customer retention and identifying key risk factors using machine learning models.</p>
+            <a href="https://github.com/sohail-ahmed-26/Mentorship-Program-Devsil/blob/main/costumer_chorn_analysis%20(1).ipynb" target="_blank" class="project-link">
+              <i data-lucide="github" width="18" height="18"></i> View Source
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card gsap-fade">
+          <div class="project-image">
+            <img src="assets/images/thumbnail/streamlit.jpeg" alt="Full Stack AI App">
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Streamlit</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Flask</span>
+            </div>
+            <h3 class="project-title">Full Stack AI Application</h3>
+            <p class="project-category">End-to-end AI application development demonstrating integration of robust ML models with modern web frameworks.</p>
+            <a href="https://github.com/sohail-ahmed-26/project_12/blob/main/FULL_STACK_AI_APPLICATION_DEVELOPMENT_USING_STREAMLIT%2C_FLASK_AND_FASTAPI.ipynb" target="_blank" class="project-link">
+              <i data-lucide="github" width="18" height="18"></i> View Source
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card gsap-fade">
+          <div class="project-image">
+            <img src="assets/images/thumbnail/cnn pic.png.jpeg" alt="CNN & LSTM">
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Deep Learning</span>
+              <span class="tag">CNN</span>
+              <span class="tag">LSTM</span>
+            </div>
+            <h3 class="project-title">Computer Vision & NLP Deep Learning</h3>
+            <p class="project-category">Advanced deep learning architecture utilizing Convolutional Neural Networks and LSTMs for complex pattern recognition.</p>
+            <a href="https://github.com/sohail-ahmed-26/CNN-project-_10/blob/main/Deep_Learning_Project_using_CNN_(Computer_Vision)_and_LSTM_(NLP).ipynb" target="_blank" class="project-link">
+              <i data-lucide="github" width="18" height="18"></i> View Source
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card gsap-fade">
+          <div class="project-image">
+            <img src="assets/images/thumbnail/healthcare.png.png" alt="Healthcare Prediction">
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Healthcare</span>
+            </div>
+            <h3 class="project-title">Healthcare Cost Prediction</h3>
+            <p class="project-category">Patient segmentation and healthcare cost forecasting models to optimize resource allocation.</p>
+            <a href="https://github.com/sohail-ahmed-26/project_08/blob/main/dataset/insurance.ipynb" target="_blank" class="project-link">
+              <i data-lucide="github" width="18" height="18"></i> View Source
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card gsap-fade">
+          <div class="project-image">
+            <img src="assets/images/thumbnail/emergency.png.jpeg" alt="Emergency Room Analysis">
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Data Analytics</span>
+              <span class="tag">Optimization</span>
+            </div>
+            <h3 class="project-title">Emergency Room Load Analysis</h3>
+            <p class="project-category">Analyzing hospital emergency room traffic to improve staffing and reduce wait times.</p>
+            <a href="https://github.com/sohail-ahmed-26/emergency-_room_analysis/blob/main/ER.ipynb" target="_blank" class="project-link">
+              <i data-lucide="github" width="18" height="18"></i> View Source
+            </a>
+          </div>
+        </div>
 
       </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="ahmed241126@gmail.com" class="contact-link">ahmed241126@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+923409368316" class="contact-link">+923409368316</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">March 03, 2005</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Mansehra, KPK, Pakistan.</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-      <div class="separator"></div>
-
-<ul class="social-list">
-
-  <li class="social-item">
-    <a href="https://github.com/sohail-ahmed-26" class="social-link" target="_blank">
-      <ion-icon name="logo-github"></ion-icon>
-    </a>
-  </li>
-
-  <li class="social-item">
-    <a href="https://www.kaggle.com/sohail2411126" class="social-link" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png" alt="Kaggle" style="width: 24px; height: 24px;">
-    </a>
-  </li>
-
-  <li class="social-item">
-    <a href="https://www.linkedin.com/in/sohail-ahmed-devsil" class="social-link" target="_blank">
-      <ion-icon name="logo-linkedin"></ion-icon>
-    </a>
-  </li>
-
-  <li class="social-item">
-    <a href="https://www.instagram.com/sohailahmed5990" class="social-link" target="_blank">
-      <ion-icon name="logo-instagram"></ion-icon>
-    </a>
-  </li>
-
-  <li class="social-item">
-    <a href="https://x.com/ahmed241126" class="social-link" target="_blank">
-      <ion-icon name="logo-twitter"></ion-icon>
-    </a>
-  </li>
-
-</ul>
-
-</div>
-
-
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Certifications</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-      <section class="about-text">
-  <p>
-    I work as a <b>Data Scientist</b> and Machine Learning Engineer. In this AI era, it was an opportunity for me to work on AI. When I completed some online courses, I started working on real-world projects as an intern at <b>Devsinc</b>. Later, I worked as a freelancer on <b>Upwork</b> and completed multiple AI projects that helped strengthen my skills.
-  </p>
-</section>
-
-        
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-
-
-            <!--First responsibility-->
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/data-analysis.png
-                " alt="icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data Analytics</h4>
-
-                <p class="service-item-text">
-                  One of my favorite part of the project is Data Analysis.
-                  I Analyze the Data and solve complex problems with it.
-                </p>
-              </div>
-
-            </li>
-
-
-            <!--Second responsibility-->
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/training-model.png" alt="training-ai-model" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Machine Learning</h4>
-
-                <p class="service-item-text">
-                I train AI models with best accuracy, remove robustness and overfitting from the trained model.
-                </p>
-              </div>
-
-            </li>
-
-
-            <!--Third responsibility-->
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/deployment.png" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Computer Vision</h4>
-
-                <p class="service-item-text">
-                  I give vision power to AI Technologies.
-                </p>
-              </div>
-
-            </li>
-
-            <!--Fourth responsibility-->
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/consultency.png" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Generative AI</h4>
-
-                <p class="service-item-text">
-                I made LLMs fine tuned, and build fuctional AI Apps for special purposes and Bussiness needs.
-                </p>
-              </div>
-
-            </li>
-
-            <!--Fifth responsibility-->
-
-              <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/consultency.png" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">AI Agents Development</h4>
-
-                <p class="service-item-text">
-                  I build AI Agents for saving the time taken by humans on repitive and logical tasks.
-                </p>
-              </div>
-
-            </li>
-
-            <!--Seventh responsibility-->
-
-              <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/consultency.png" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">AI Automation</h4>
-
-                <p class="service-item-text">
-                  I Automate tasks with AI that are repititive and time consuming.
-                </p>
-              </div>
-
-            </li>
-
-
-            <!--Eight responsibility-->
-
-              <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/consultency.png" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">MLOPs</h4>
-
-                <p class="service-item-text">
-                  I deploy your AI model on AWS cloud services.
-                </p>
-              </div>
-
-            </li>
-
-            <!--Ninth responsibility-->
-
-              <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/consultency.png" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Consultency</h4>
-
-                <p class="service-item-text">
-                  Provide Consultency to my clients about solving their business problems through data provided by them.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/clients/maazali.png" alt="Maaz Ali" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Maaz Ali</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Sohail's ability to turn raw data into actionable insights is truly impressive. He handled our data
-                    preprocessing and analysis with precision and produced results that directly impacted our business
-                    decisions. His dedication and technical expertise made a complex task look simple.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/clients/dramitmitlal.png" alt="Dr. Amit Mittal" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Dr. Amit Mittal</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    When it comes to end-to-end data solutions, Sohail is the go-to professional. I worked with him on a project
-                    requiring data modeling and deployment, and I was amazed by how smoothly the process went. His ability to
-                    navigate challenges and deliver on time, all while maintaining high-quality standards, made him an
-                    indispensable part of our team.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/clients/samri.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Our collaboration with Sohail was a game-changer. He not only brought strong technical skills but also a
-                    deep understanding of how to make data work for our business. His ability to create seamless data pipelines
-                    saved us countless hours, and his clear communication made the entire project stress-free.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/clients/Braxton.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    I’ve worked with several data professionals, but Abdullah stands out for his holistic approach. He didn’t just
-                    provide data models; he ensured they were fully integrated into our system, ready to be used. His attention
-                    to detail and commitment to delivering exceptional work have set a new standard for our future collaborations.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">BS Telecommunication</h4>
-
-              <span>In Progress.</span>
-
-              <p class="timeline-text">
-                  Completed 3rd out of 8 semisters, BS Telecommunications at Hazara University, Pakistan.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">FSC</h4>
-
-              <span>2022 — 2024</span>
-
-              <p class="timeline-text">
-                I completed my FSC in 2024 at The Right Schools and Colleges Manserha, marking a significant milestone in the timeline of FCS.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">MATRIC</h4>
-
-              <span>2020 — 2022</span>
-
-              <p class="timeline-text">
-                Matriculated from The High School Mittikot Balakot Mansehra – paving the way for a bright academic future.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            
-            <li class="timeline-item">
-              
-              <h4 class="h4 timeline-item-title">Continuous Learner</h4>
-              
-              <span>Till Death</span>
-              
-              <p class="timeline-text">
-                While my professional experience might be limited, my commitment to growth is not. I have a strong passion for learning new technologies and solving complex problems. I actively seek out challenges to expand my skills and apply them to real-world scenarios. What I may lack in years of experience, I make up for with determination, curiosity, and a relentless drive to deliver impactful solutions.
-              </p>
-              
-            </li>
-
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Full Stack AI Engineer @ IMTA</h4>
-            
-              <span> August 2025 --> Present</span>
-            
-              <p class="timeline-text">
-                Working as a Full Stack AI Engineer at IMTA, developing end-to-end AI solutions combining frontend, backend, and machine learning technologies. Leading projects that integrate AI capabilities into web applications and enterprise systems.
-              </p>
-            
-            </li>
-
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">ML Engineer @ DevFera</h4>
-            
-              <span> Feb 2026 --> Feb 2027</span>
-            
-              <p class="timeline-text">
-                Served as an ML Engineer at Devsils for one year, focusing on developing and deploying machine learning models for various business applications. Worked on predictive analytics, computer vision projects, and AI-powered solutions, contributing to the company's AI product development.
-              </p>
-            
-            </li>
-
-
-            <li class="timeline-item">
-          
-              <h4 class="h4 timeline-item-title">Intern - Data Science</h4>
-          
-              <span>February 2026 — May 2026</span>
-          
-              <p class="timeline-text">
-                Completed a 3-month internship at Jazz, where I worked on data analysis and machine learning projects, gaining practical experience in data preprocessing, building predictive models, and generating business insights. Collaborated closely with senior data scientists and contributed to optimizing data pipelines.
-              </p>
-          
-            </li>
-          
-          </ol>
-          
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My Skills</h3>
-        
-          <ul class="skills-list content-card">
-        
-          <!-- Data Science Skills Section --> 
-        
-            <li class="skills-item">
-        
-              <div class="title-wrapper">
-                <h5 class="h5">Data Analytics</h5>
-                <data value="80">80%</data>
-              </div>
-        
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-        
-            </li>
-                      
-
-
-            <li class="skills-item">
-        
-              <div class="title-wrapper">
-                <h5 class="h5">Machine Learning</h5>
-                <data value="83">83%</data>
-              </div>
-        
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 83%;"></div>
-              </div>
-        
-            </li>
-
-
-        
-            <li class="skills-item">
-        
-              <div class="title-wrapper">
-                <h5 class="h5">Computer Vission</h5>
-                <data value="55">55%</data>
-              </div>
-        
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 55%;"></div>
-              </div>
-        
-            </li>
-
-
-
-
-            <li class="skills-item">
-        
-              <div class="title-wrapper">
-                <h5 class="h5">GENERATIVE AI</h5>
-                <data value="60">60%</data>
-              </div>
-        
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
-                
-            
-            <li class="skills-item">
-        
-              <div class="title-wrapper">
-                <h5 class="h5">AI AUTOMATION</h5>
-                <data value="60">60%</data>
-              </div>
-        
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
-
-            </li>
-
-
-
-            
-            
-            
-            <li class="skills-item">
-              
-              <div class="title-wrapper">
-                <h5 class="h5">AI AGENTS DEVELOPMENT</h5>
-                <data value="70">70%</data>
-              </div>
-              
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-              
-            </li>
-            
-            
-            
-            <li class="skills-item">
-        
-              <div class="title-wrapper">
-                <h5 class="h5">MLOps</h5>
-                <data value="50">50%</data>
-              </div>
-        
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-        
-            </li>
-
-            <li class="skills-item">
-        
-              <div class="title-wrapper">
-                <h5 class="h5">Consultancy</h5>
-                <data value="85">85%</data>
-              </div>
-        
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-        
-          </ul>
-        
-          <!-- Technical Skills Section -->
-          <h3 class="h3 skills-title">Technical Skills</h3>
-        
-          <ul class="skills-list content-card">
-        
-            <li class="skills-item">
-        
-              <div class="title-wrapper">
-                <h5 class="h5">GitHub</h5>
-                <data value="75">75%</data>
-              </div>
-        
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-        
-            </li>
-
-            <li class="skills-item">
-        
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="75">75%</data>
-              </div>
-        
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-        
-            </li>
-
-            <li class="skills-item">
-        
-              <div class="title-wrapper">
-                <h5 class="h5">Docker</h5>
-                <data value="30">30%</data>
-              </div>
-        
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 30%;"></div>
-              </div>
-        
-            </li>
-
-            <li class="skills-item">
-        
-              <div class="title-wrapper">
-                <h5 class="h5">AWS</h5>
-                <data value="40">40%</data>
-              </div>
-        
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 40%;"></div>
-              </div>
-        
-            </li>
-
-            <li class="skills-item">
-        
-              <div class="title-wrapper">
-                <h5 class="h5">SQL</h5>
-                <data value="65">65%</data>
-              </div>
-        
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 65%;"></div>
-              </div>
-        
-            </li>
-
-            <li class="skills-item">
-        
-              <div class="title-wrapper">
-                <h5 class="h5">Linux</h5>
-                <data value="30">30%</data>
-              </div>
-        
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 30%;"></div>
-              </div>
-        
-            </li>
-
-            <li class="skills-item">
-        
-              <div class="title-wrapper">
-                <h5 class="h5">Jupyter Notebook</h5>
-                <data value="95">95%</data>
-              </div>
-        
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 95%;"></div>
-              </div>
-        
-            </li>
-
-            <li class="skills-item">
-        
-              <div class="title-wrapper">
-                <h5 class="h5">VS Code</h5>
-                <data value="93">93%</data>
-              </div>
-        
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 93%;"></div>
-              </div>
-        
-            </li>
-        
-          </ul>
-        
-          <!-- Additional Skills Section -->
-          <h3 class="h3 skills-title">Soft Skills</h3>
-        
-          <ul class="skills-list content-card">
-        
-            <li class="skills-item">
-        
-              <div class="title-wrapper">
-                <h5 class="h5">Communication</h5>
-                <data value="80">80%</data>
-              </div>
-        
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-        
-            </li>
-
-            <li class="skills-item">
-        
-              <div class="title-wrapper">
-                <h5 class="h5">Problem Solving</h5>
-                <data value="100">100%</data>
-              </div>
-        
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
-        
-            </li>
-
-            <li class="skills-item">
-        
-              <div class="title-wrapper">
-                <h5 class="h5">Team Work</h5>
-                <data value="85">85%</data>
-              </div>
-        
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-        
-            </li>
-
-            <li class="skills-item">
-        
-              <div class="title-wrapper">
-                <h5 class="h5">Leadership</h5>
-                <data value="80">80%</data>
-              </div>
-        
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-        
-            </li>
-
-            <li class="skills-item">
-        
-              <div class="title-wrapper">
-                <h5 class="h5">Time Management</h5>
-                <data value="88">88%</data>
-              </div>
-        
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 88%;"></div>
-              </div>
-        
-            </li>
-        
-          </ul>
-        
-        </section>
-        
-
-      </article>
-
-      <!--
-        - #CERTIFICATIONS
-      -->
-        
-      <article class="blog" data-page="certifications">
-
-        <header>
-          <h2 class="h2 article-title">Certifications</h2>
-        </header>
-      
-        <section class="blog-posts">
-          <ul class="blog-posts-list">
-      
-            <!-- Certification 1 -->
-            <li class="blog-post-item">
-              <a href="https://shaheer.neufera.com/assets/images/certificates/certificate-1727174127490.jpg" target="_blank">
-                <figure class="blog-banner-box project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/certificates/certificate-1727174127490.jpg" alt="Python Ka Chilla (40-Days)" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Codanics</p>
-                    <span class="dot"></span>
-                    <time datetime="2024-07-07">July 7, 2024</time>
-                  </div>
-                  <h3 class="h4 blog-item-title">Python Ka Chilla (40-Days)</h3>
-                </div>
-              </a>
-            </li>
-
-          </ul>
-        </section>
-      </article>
-      
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-
-          <!-- Here is the Filter buttons for Windows
-          We can add more buttons in it by copy one of the list (li) 
-          and paste below the last list, changing the name of the button-->
-
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-            
-            <li class="filter-item">
-              <button data-filter-btn>Data Analytics</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Machine Learning</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Computer Vision</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Generative AI</button>
-            </li>
-            
-            <li class="filter-item">
-              <button data-filter-btn>AI Agents</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>AI Automation</button>
-            </li>
-            
-
-          </ul>
-
-
-          <!--
-          This code is for filtering the buttons/categories
-          -->
-
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-            <!-- Here is the Filter buttons for Mobile
-            We can add more buttons in it by copy one of the list (li) and paste below the last list, changing the name of the button-->
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Data Analytics</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Machine Learning</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Computer Vision</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Generative AI</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>AI Agents</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>AI Automation</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-            <!--
-            - # Here is the 1st Project
-            -->
-
-            <li class="project-item  active" data-filter-item data-category="data analytics">
-              <a href="https://github.com/sohail-ahmed-26/Mentorship-Program-Devsil/blob/main/Projects/Project%201/sales_dataset.ipynb" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="assets/images/thumbnail/WhatsApp Image 2026-02-26 at 12.26.29 PM.jpeg" alt="AI Bussiness" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Sales Data Analysis</h3>
-
-                <p class="project-category">Data Analytics</p>
-
-              </a>
-            </li>
-
-              <!--
-            - # Here is the 2nd Project
-            -->
-
-            <li class="project-item  active" data-filter-item data-category="data analytics">
-              <a href="https://github.com/sohail-ahmed-26/Mentorship-Program-Devsil/blob/main/costumer_chorn_analysis%20(1).ipynb" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="assets/images/thumbnail/costumer_churn.png.jpeg" alt="AI Bussiness" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Costumer Churn Analysis</h3>
-
-                <p class="project-category">Data Analytics</p>
-
-              </a>
-            </li>
-            <!--
-            - # Here is the 3rd Project
-            -->
-
-            <li class="project-item  active" data-filter-item data-category="data analytics">
-              <a href="https://github.com/sohail-ahmed-26/Employee-Attrition-Analysis/blob/main/Employee%20Attrition%20Analysis.ipynb" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="assets/images/thumbnail/employee-attrition.png.jpeg" alt="AI Bussiness" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Employee Attrition Analysis</h3>
-
-                <p class="project-category">Data Analytics</p>
-
-              </a>
-            </li>
-
-            <!--
-            - # Here is the 4th Project
-            -->
-
-            <li class="project-item  active" data-filter-item data-category="data analytics">
-              <a href="https://github.com/sohail-ahmed-26/emergency-_room_analysis/blob/main/ER.ipynb" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="assets/images/thumbnail/emergency.png.jpeg" alt="AI Bussiness" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Hospital Emergency Room Load Analysis</h3>
-                  <p class="project-category">Data Analytics</p>
-              </a>
-            </li>
-            
-            
-            <!--
-            - # Here is the 1st Project
-            -->
-
-            
-            </li>
-            </a>
-            <li class="project-item  active" data-filter-item data-category="machine learning">
-              <a href="https://github.com/sohail-ahmed-26/00_Project/blob/main/01_Heart_disease_prediction/heart_disease_prediction.ipynb" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="assets/images/thumbnail/heart_disease.png.jpeg" alt="AI Bussiness" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Heart Disease Prediction</h3>
-
-                <p class="project-category">Machine Learning</p>
-
-              </a>
-            </li>
-
-            <!--
-            - # Here is the 2nd Project
-            -->         
-            </li>
-            </a>
-            <li class="project-item  active" data-filter-item data-category="machine learning">
-              <a href="https://github.com/sohail-ahmed-26/project_6/blob/main/dataset/social_media_engagement_prediction.ipynb" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="assets/images/thumbnail/social.png.jpeg" alt="AI Bussiness" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Social Media Engagement Prediction</h3>
-
-                <p class="project-category">Machine Learning</p>
-
-              </a>
-            </li>
-
-            <!--
-            - # Here is the 3rd Project
-            -->         
-            </li>
-            </a>
-            <li class="project-item  active" data-filter-item data-category="machine learning">
-              <a href="https://github.com/sohail-ahmed-26/project_08/blob/main/dataset/insurance.ipynb" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="assets/images/thumbnail/healthcare.png.png" alt="AI Bussiness" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Healthcare Cost Prediction and Patient Segmentation Using Machine Learning</h3>
-
-                <p class="project-category">Machine Learning</p>
-
-              </a>
-            </li>
-
-            <!--
-            - # Here is the 4th Project
-            -->         
-            </li>
-            </a>
-            <li class="project-item  active" data-filter-item data-category="machine learning">
-              <a href="https://github.com/sohail-ahmed-26/project-9-ML-DL/blob/main/Unsupervised_ML_%26_Deep_Learning.ipynb" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="assets/images/thumbnail/unsupervised.png.jpeg" alt="AI Bussiness" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Unsupervised & Deep Learning Project</h3>
-
-                <p class="project-category">Machine Learning</p>
-
-              </a>
-            </li>
-
-            <!-- here is 5th Project -->
-            </a>
-            <li class="project-item  active" data-filter-item data-category="machine learning">
-              <a href="https://github.com/sohail-ahmed-26/CNN-project-_10/blob/main/Deep_Learning_Project_using_CNN_(Computer_Vision)_and_LSTM_(NLP).ipynb" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="assets/images/thumbnail/cnn pic.png.jpeg" alt="AI Bussiness" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Deep Learning Project using CNN (Computer Vision) and LSTM (NLP)</h3>
-
-                <p class="project-category">Machine Learning</p>
-
-              </a>
-            </li>
-
-            
-            <!-- here is 6th Project -->
-            </a>
-            <li class="project-item  active" data-filter-item data-category="machine learning">
-              <a href="https://github.com/sohail-ahmed-26/project_11/blob/main/time_series_forcasting.ipynb" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="assets/images/thumbnail/time_series.jpeg" alt="AI Bussiness" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Time Series Forecasting & Transfer Learning Project</h3>
-
-                <p class="project-category">Machine Learning</p>
-
-              </a>
-            </li>
-
-            <!-- here is 7th Project -->
-            </a>
-            <li class="project-item  active" data-filter-item data-category="machine learning">
-              <a href="https://github.com/sohail-ahmed-26/project_12/blob/main/FULL_STACK_AI_APPLICATION_DEVELOPMENT_USING_STREAMLIT%2C_FLASK_AND_FASTAPI.ipynb" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="assets/images/thumbnail/streamlit.jpeg" alt="AI Bussiness" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Full Stack AI Application Development using Streamlit, Flask and FastAPI</h3>
-
-                <p class="project-category">Machine Learning</p>
-
-              </a>
-            </li>
-            </ul>
-
-        </section>
-
-      </article>
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        
-        <section class="contact-form">           
-          <form action="#" class="form" data-form>
-            
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-            
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-            
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-            
-          </form>
-
-
-          <!---Map Title-->
-
-          </section>
-
-        <section class="mapboxtitle" data-mapbox-title>
-          <h3 class="h3 map-title">Location</h3>
-
-          <!--Map Section-->
-        </section>
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5986.7249099660285!2d73.2469668316
-            4305!3d34.42128930842356!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38de17bf878d1177%3A0x182b25a42224b791!2sHaz
-            ara%20University%20Mansehra!5e0!3m2!1sen!2s!4v1729511014579!5m2!1sen!2s" width="600" height="450"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </figure>
-        </section>
-
-      </article>
-
     </div>
+  </section>
 
-  </main>
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header gsap-fade">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Open for consultancy, full-time roles, or interesting collaborations.</p>
+      </div>
+      
+      <div class="contact-container gsap-fade">
+        <form action="#" class="form">
+          <div class="form-group">
+            <input type="text" class="form-input" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-input" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-input" placeholder="How can I help you?" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="social-links">
+        <a href="https://github.com/sohail-ahmed-26" target="_blank" class="social-link"><i data-lucide="github"></i></a>
+        <a href="https://www.linkedin.com/in/sohail-ahmed-devsil" target="_blank" class="social-link"><i data-lucide="linkedin"></i></a>
+        <a href="https://x.com/ahmed241126" target="_blank" class="social-link"><i data-lucide="twitter"></i></a>
+        <a href="https://www.instagram.com/sohailahmed5990" target="_blank" class="social-link"><i data-lucide="instagram"></i></a>
+        <a href="mailto:ahmed241126@gmail.com" class="social-link"><i data-lucide="mail"></i></a>
+      </div>
+      <p class="footer-text">&copy; 2026 Sohail Ahmed. All rights reserved.</p>
+    </div>
+  </footer>
 
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+  
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+  </script>
 </body>
-
 </html>
