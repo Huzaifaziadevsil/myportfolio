@@ -4,25 +4,25 @@
    DESIGN TOKENS
    ============================================================ */
 :root {
-  --bg-primary: #07070a;
-  --bg-secondary: #0f0f14;
+  --bg-primary: #0a0505;
+  --bg-secondary: #11080a;
   --bg-card: rgba(255, 255, 255, 0.025);
   --bg-card-hover: rgba(255, 255, 255, 0.05);
   --bg-glass: rgba(255, 255, 255, 0.04);
 
-  --text-primary: #f0f4ff;
-  --text-secondary: #8892b0;
-  --text-muted: #495670;
+  --text-primary: #fcf5f7;
+  --text-secondary: #a89498;
+  --text-muted: #5e4f52;
 
-  --cyan: #22d3ee;
-  --purple: #a855f7;
-  --blue: #3b82f6;
+  --cyan: #e11d48;
+  --purple: #881337;
+  --blue: #be123c;
 
   --border: rgba(255, 255, 255, 0.07);
-  --border-glow: rgba(34, 211, 238, 0.18);
+  --border-glow: rgba(225, 29, 72, 0.18);
 
   --grad-text: linear-gradient(135deg, var(--cyan) 0%, var(--purple) 100%);
-  --grad-glow-bg: radial-gradient(ellipse at 50% 0%, rgba(34, 211, 238, 0.07) 0%, rgba(168, 85, 247, 0.05) 40%, transparent 70%);
+  --grad-glow-bg: radial-gradient(ellipse at 50% 0%, rgba(225, 29, 72, 0.09) 0%, rgba(136, 19, 55, 0.06) 40%, transparent 70%);
 
   --font-sans: 'Inter', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
