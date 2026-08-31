@@ -1415,7 +1415,7 @@ footer {
    ANIMATIONS (GSAP-driven classes)
    ============================================================ */
 .gsap-reveal {
-  opacity: 0;
+  opacity: 1;
 }
 
 /* GSAP sets this visible */
