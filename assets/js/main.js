@@ -161,18 +161,10 @@ window.openDemo = function(type, url, title, fallbackUrl) {
 // ── Typewriter Effect for Hero ────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   const words = [
-    "AI Engineer",
-    "Data Scientist",
-    "Machine Learning Engineer",
-    "Deep Learning Engineer",
-    "Computer Vision Engineer",
-    "NLP Engineer",
-    "Generative AI Developer",
+    "Data Analyst",
+    "Aspiring Data Scientist",
     "Python Developer",
-    "AI Agents Developer",
-    "RAG Systems Builder",
-    "Prompt Engineer",
-    "MLOps Engineer"
+    "Data Visualizer"
   ];
   let i = 0;
   let timer;
